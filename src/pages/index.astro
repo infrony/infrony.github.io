@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
+import Header from '~/components/widgets/Header.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -19,6 +19,26 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/' },
+        { text: 'About', href: '/about' },
+        { text: 'Services', href: '/services' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Github', href: 'https://github.com/infrony' },
+      ]}
+      actions={[
+        {
+          text: 'Contact Us',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
   <!-- Hero Widget ******************* -->
 
   <Hero
