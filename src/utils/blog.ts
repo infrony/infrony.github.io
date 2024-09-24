@@ -102,7 +102,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
 
 const load = async function (): Promise<Array<Post>> {
   const posts = await getCollection('post');
-  const normalizedPosts = posts.map(async (post) => await getNormalizedPost(post));
+  const normalizedPosts = posts.map(async (post: CollectionEntry<'post'>) => await getNormalizedPost(post));
 
   const results = (await Promise.all(normalizedPosts))
     .sort((a, b) => b.publishDate.valueOf() - a.publishDate.valueOf())
@@ -198,7 +198,7 @@ export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: Pagin
   if (!isBlogEnabled || !isBlogCategoryRouteEnabled) return [];
 
   const posts = await fetchPosts();
-  const categories = {};
+  const categories: { [key: string]: { slug: string; title: string } } = {};
   posts.map((post) => {
     if (post.category?.slug) {
       categories[post.category?.slug] = post.category;
@@ -222,7 +222,7 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
   if (!isBlogEnabled || !isBlogTagRouteEnabled) return [];
 
   const posts = await fetchPosts();
-  const tags = {};
+  const tags: { [key: string]: { slug: string; title: string } } = {};
   posts.map((post) => {
     if (Array.isArray(post.tags)) {
       post.tags.map((tag) => {

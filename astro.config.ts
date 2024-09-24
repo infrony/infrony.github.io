@@ -74,7 +74,10 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ['cdn.pixabay.com'],
+    service: {
+      entrypoint: '@astrojs/image/remote',
+      // Configura tus opciones aquí
+    },
   },
 
   markdown: {
@@ -90,9 +93,5 @@ export default defineConfig({
     },
   },
 
-  adapter: cloudflare({
-    platformProxy: {
-      enabled: true,
-    },
-  }),
+  adapter: cloudflare(),
 });
