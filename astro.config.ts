@@ -91,6 +91,9 @@ export default defineConfig({
         '~': path.resolve(__dirname, './src'),
       },
     },
+    ssr: {
+      noExternal: ['linkedom'], // Evita empaquetar 'linkedom' y otras dependencias problemáticas
+    },
   },
 
   adapter: cloudflare(),
