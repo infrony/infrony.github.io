@@ -14,7 +14,7 @@ import Brands from '~/components/widgets/Brands.astro';
 import { YouTube } from 'astro-embed';
 
 const metadata = {
-  title: 'Startup Landing Page',
+  title: 'Inicio - Servitech Infrony',
 };
 ---
 
@@ -30,7 +30,7 @@ const metadata = {
       ]}
       actions={[
         {
-          text: 'Contactanos',
+          text: 'Contáctanos',
           href: '/contact',
         },
       ]}
@@ -42,31 +42,30 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Startup Web Demo"
+    tagline="Impulsa tu Negocio con Soluciones Digitales"
     actions={[
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Conoce nuestros servicios',
+        href: '/services',
+        icon: 'tabler:layout-dashboard',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Más información', href: '#features' },
     ]}
   >
     <Fragment slot="title">
-      Improve <span class="hidden sm:inline">the online presence of</span> your <span
-        class="text-accent dark:text-white highlight">Startup</span
-      > with Astrowind templates
+      Soluciones <span class="text-accent dark:text-white highlight">Tecnológicas</span> a la medida de tu negocio
     </Fragment>
 
     <Fragment slot="subtitle">
-      Step into the spotlight with <span class="font-semibold">Astrowind</span> templates, your pathway to fortifying your
-      startup's digital footprint, fostering credibility, and expanding your reach.
+      En <span class="font-semibold">Servitech Infrony</span>, combinamos tecnología, creatividad y experiencia para
+      transformar tus procesos digitales. Ofrecemos servicios de desarrollo de software, consultoría tecnológica, diseño
+      web y mucho más, enfocados en potenciar tu presencia online y optimizar la experiencia de tus clientes.
     </Fragment>
 
     <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
+      <YouTube id="gxBkghlglTg" title="Introducción a nuestros servicios tecnológicos" />
       <style is:inline>
         lite-youtube {
           margin: 0 auto;
@@ -79,8 +78,8 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="About us"
-    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+    title="Sobre Nosotros"
+    subtitle="En Servitech Infrony, creemos en la magia de convertir ideas en soluciones digitales impactantes. Fundados por desarrolladores apasionados, nuestro objetivo es simplificar el proceso de transformación digital para empresas de todos los tamaños, ofreciendo soluciones a medida que impulsan la eficiencia y el crecimiento."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -90,21 +89,21 @@ const metadata = {
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Discover the impressive impact of Astrowind"
-    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    title="Nuestra Trayectoria"
+    subtitle="Los siguientes números reflejan la confianza de nuestros clientes y los resultados que hemos ayudado a alcanzar."
     stats={[
-      { title: 'Downloads', amount: '182K' },
-      { title: 'Websites Launched', amount: '87' },
-      { title: 'User Ratings', amount: '4.8' },
-      { title: 'Satisfied Clients', amount: '116K' },
+      { title: 'Proyectos Completados', amount: '150+' },
+      { title: 'Clientes Satisfechos', amount: '120+' },
+      { title: 'Años de Experiencia', amount: '10+' },
+      { title: 'Certificaciones', amount: '20+' },
     ]}
   />
 
   <!-- Brands Widget ****************** -->
 
   <Brands
-    title="Partnerships & Collaborations"
-    subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+    title="Colaboraciones y Alianzas"
+    subtitle="En Servitech Infrony, creemos en el poder de la colaboración para impulsar la innovación y crear experiencias excepcionales."
     icons={[]}
     images={[
       {
@@ -119,7 +118,6 @@ const metadata = {
         src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
         alt: 'Ebay',
       },
-
       {
         src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
         alt: 'Youtube',
@@ -150,26 +148,26 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    title="Nuestros Servicios"
+    subtitle="Ofrecemos una gama completa de servicios tecnológicos diseñados para ayudar a tu empresa a crecer y adaptarse al entorno digital."
     items={[
       {
-        title: 'Installation Instructions',
+        title: 'Consultoría Tecnológica',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
-        icon: 'flat-color-icons:document',
+          'Te ayudamos a identificar y adoptar las mejores soluciones tecnológicas para tu negocio, mejorando la eficiencia y reduciendo costos operativos.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Demo and Previews',
+        title: 'Desarrollo de Aplicaciones',
         description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
-        icon: 'flat-color-icons:template',
+          'Creamos aplicaciones web y móviles personalizadas que optimizan tus procesos y mejoran la interacción con tus clientes.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Technical Support',
+        title: 'Diseño Gráfico y Branding',
         description:
-          'Providing customer support for any technical issues related to the templates or their implementation.',
-        icon: 'flat-color-icons:voice-presentation',
+          'Desarrolla una identidad visual coherente y profesional que capture la atención de tus clientes y fortalezca tu marca.',
+        icon: 'tabler:palette',
       },
     ]}
   >
@@ -182,42 +180,43 @@ const metadata = {
 
   <Features
     id="features"
-    title="Main features of our templates"
-    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
+    title="Beneficios de Trabajar con Nosotros"
+    subtitle="Nuestras soluciones están diseñadas para ofrecer resultados tangibles y mejorar la experiencia de tus clientes."
     columns={3}
     items={[
       {
-        title: 'Modern and Professional Design',
+        title: 'Soluciones Personalizadas',
         description:
-          'Have a contemporary design that reflects current design trends and gives a professional impression.',
-        icon: 'tabler:artboard',
-      },
-      {
-        title: 'Responsive and Mobile-Friendly',
-        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
-        icon: 'tabler:picture-in-picture',
-      },
-      {
-        title: 'Customizability',
-        description:
-          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
+          'Nos adaptamos a las necesidades específicas de tu negocio, ofreciendo servicios que se alinean con tus objetivos.',
         icon: 'tabler:adjustments-horizontal',
       },
       {
-        title: 'Fast Loading Times',
-        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
-        icon: 'tabler:rocket',
+        title: 'Diseño Responsivo',
+        description: 'Nuestras soluciones están optimizadas para funcionar perfectamente en cualquier dispositivo.',
+        icon: 'tabler:picture-in-picture',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Soporte Técnico',
         description:
-          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
+          'Ofrecemos soporte continuo para asegurar que tus soluciones funcionen de manera óptima en todo momento.',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Integración de APIs',
+        description:
+          'Automatizamos y conectamos tus sistemas, mejorando la eficiencia operativa y reduciendo la intervención manual.',
+        icon: 'tabler:arrows-join',
+      },
+      {
+        title: 'Optimización SEO',
+        description:
+          'Mejoramos la visibilidad de tu sitio web en los motores de búsqueda, atrayendo más tráfico y clientes potenciales.',
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Compatibility',
-        description: 'The templates work seamlessly across various content management systems and website builders.',
-        icon: 'tabler:plug-connected',
+        title: 'Desarrollo Ágil',
+        description: 'Trabajamos con metodologías ágiles que permiten una entrega rápida y eficiente de tus proyectos.',
+        icon: 'tabler:rocket',
       },
     ]}
   />
@@ -225,37 +224,37 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
+    title="Preguntas Frecuentes"
     items={[
       {
-        title: 'What are landing page templates?',
+        title: '¿Qué servicios ofrecen?',
         description:
-          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+          'Ofrecemos consultoría tecnológica, desarrollo de aplicaciones, diseño gráfico y branding, integración de APIs, y soluciones de hosting, entre otros.',
       },
       {
-        title: 'Why should I use a template?',
+        title: '¿Cómo puedo contactar al soporte técnico?',
         description:
-          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+          'Puedes contactarnos a través de nuestro formulario de contacto, por teléfono al +507 68929449, o por email a hola@infrony.com.',
       },
       {
-        title: 'Can I preview templates before buying?',
+        title: '¿Ofrecen servicios de mantenimiento?',
         description:
-          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+          'Sí, ofrecemos planes de mantenimiento y soporte técnico para asegurar que tu sitio web o aplicación funcione sin problemas.',
       },
       {
-        title: 'Do I need technical skills to use a template?',
+        title: '¿Trabajan con empresas de todos los tamaños?',
         description:
-          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+          'Sí, trabajamos con pequeñas, medianas y grandes empresas, adaptando nuestras soluciones a las necesidades específicas de cada cliente.',
       },
       {
-        title: 'Can I use the template on multiple websites?',
+        title: '¿Cómo garantizan la seguridad de mis datos?',
         description:
-          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+          'Todas nuestras conexiones son seguras y cifradas, y no almacenamos datos personales en bases de datos. Además, utilizamos protocolos de seguridad avanzados para proteger tu información.',
       },
       {
-        title: 'What if I need help with customization?',
+        title: '¿Puedo solicitar un servicio personalizado?',
         description:
-          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+          'Claro, nos especializamos en ofrecer soluciones a medida para cada cliente. Contáctanos para discutir tus necesidades específicas.',
       },
     ]}
   >
@@ -267,17 +266,17 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Let us know how we can help"
-    subtitle="We’re here to help and answer any question you might have."
+    title="¿Cómo podemos ayudarte?"
+    subtitle="Estamos aquí para ayudarte y responder cualquier pregunta que puedas tener."
     columns={4}
     items={[
       {
-        title: 'Phone',
+        title: 'Teléfono',
         icon: 'tabler:phone',
         callToAction: {
           target: '_blank',
-          text: 'Call us',
-          href: '/',
+          text: 'Llámanos',
+          href: 'tel:+50768929449',
           variant: 'link',
         },
       },
@@ -286,28 +285,28 @@ const metadata = {
         icon: 'tabler:mail',
         callToAction: {
           target: '_blank',
-          text: 'Write to us',
-          href: '/',
+          text: 'Escríbenos',
+          href: 'mailto:hola@infrony.com',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with sales',
+        title: 'Chat con ventas',
         icon: 'tabler:message-circle',
         callToAction: {
           target: '_blank',
-          text: 'Start chatting',
-          href: '/',
+          text: 'Inicia chat',
+          href: '/contact',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with support',
+        title: 'Chat con soporte',
         icon: 'tabler:message-circle',
         callToAction: {
           target: '_blank',
-          text: 'Start chatting',
-          href: '/',
+          text: 'Inicia chat',
+          href: '/contact',
           variant: 'link',
         },
       },
@@ -321,17 +320,17 @@ const metadata = {
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Contáctanos',
+        href: '/contact',
+        icon: 'tabler:message-circle',
       },
     ]}
   >
-    <Fragment slot="title">Be a part of our vision</Fragment>
+    <Fragment slot="title">Sé parte de nuestra visión</Fragment>
 
     <Fragment slot="subtitle">
-      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
-      impact.
+      Descubre un entorno de trabajo dinámico, oportunidades de crecimiento inigualables y la posibilidad de tener un
+      impacto significativo.
     </Fragment>
   </CallToAction>
 </Layout>
