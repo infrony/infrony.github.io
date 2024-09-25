@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-09-25T00:00:00Z
 author: Infrony
-title: Integración de APIs: Qué es, Cómo Funciona y Por Qué tu Negocio la Necesita
+title: Integración de APIs Qué es, Cómo Funciona y Por Qué tu Negocio la Necesita
 excerpt: Aprende qué es la integración de APIs, cómo funciona y cómo puede transformar tu negocio al conectar aplicaciones y automatizar procesos.
 image: https://images.unsplash.com/photo-1531497865144-0464d2d2e602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80
 category: Integración de APIs
