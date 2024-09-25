@@ -24,7 +24,7 @@ const currentPage = page.currentPage ?? 1;
 // const allTags = await findTags();
 
 const metadata = {
-  title: `Blog${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `Blog${currentPage > 1 ? ` — Página ${currentPage}` : ''}`,
   robots: {
     index: blogListRobots?.index && currentPage === 1,
     follow: blogListRobots?.follow,
@@ -38,15 +38,15 @@ const metadata = {
 <Layout metadata={metadata}>
   <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
     <Headline
-      subtitle="A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind"
+      subtitle="Encuentra noticias, tutoriales, recursos y contenido interesante sobre tecnología, desarrollo web y soluciones digitales para tu negocio."
     >
-      The Blog
+      Blog de Infrony
     </Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
     <!--
-      <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />
-      <PostTags tags={allTags}  title="Search by Tags:" />
+      <PostTags tags={allCategories} class="mb-2" title="Busca por Categorías:" isCategory />
+      <PostTags tags={allTags} title="Busca por Etiquetas:" />
     -->
   </section>
 </Layout>
