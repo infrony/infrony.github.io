@@ -1,75 +1,95 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
+import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'Nosotros',
 };
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Inicio', href: '/' },
+        { text: 'Nosotros', href: '/about' },
+        { text: 'Servicios', href: '/services' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Github', href: 'https://github.com/infrony' },
+      ]}
+      actions={[
+        {
+          text: 'Contactanos',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+      showRssFeed
+      showToggleTheme
+    />
+  </Fragment>
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="Sobre Nosotros"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      alt: 'Imagen de equipo trabajando',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Innovamos para que tu <br />
+      <span class="text-accent dark:text-white highlight"> Negocio Crezca</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      En Servitech Infrony, combinamos tecnología y creatividad para ofrecer soluciones personalizadas que optimizan tus
+      procesos, mejoran tu presencia en línea y potencian tu negocio. Nuestro equipo está comprometido con brindarte las
+      herramientas que necesitas para tener éxito en la era digital.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Nuestros Números"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Años de Experiencia', amount: '10+' },
+      { title: 'Proyectos Completados', amount: '150+' },
+      { title: 'Clientes Satisfechos', amount: '120+' },
+      { title: 'Certificaciones', amount: '50+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Nuestros Servicios"
+    subtitle="Ofrecemos una amplia gama de servicios diseñados para cubrir todas tus necesidades tecnológicas y digitales."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Consultoría Tecnológica y Estrategia Digital',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Optimiza tu empresa mediante la tecnología, mejorando procesos internos y aumentando la captación de clientes.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+        title: 'Mantenimiento y Soporte de Sitios Web',
+        description: 'Mantén tu sitio actualizado y en funcionamiento sin preocuparte por los aspectos técnicos.',
+        icon: 'tabler:settings',
       },
       {
-        title: 'Photography',
+        title: 'Desarrollo de Aplicaciones Web y Móviles',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Creamos aplicaciones personalizadas que mejoran la interacción con tus clientes y optimizan tus procesos.',
+        icon: 'tabler:device-mobile',
       },
     ]}
   />
@@ -81,68 +101,64 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+        title: 'Integración de APIs y Automatización',
+        description: 'Automatizamos tus procesos y conectamos herramientas para mejorar la eficiencia operativa.',
+        icon: 'tabler:arrows-join',
       },
       {
-        title: 'Blog',
+        title: 'Diseño Gráfico y Branding',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'Crea una imagen profesional y coherente que capture la atención de tus clientes y destaque tu marca.',
+        icon: 'tabler:palette',
       },
       {
-        title: 'Business',
+        title: 'Creación de Tiendas Online (E-commerce)',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+          'Lanzamos tu tienda online rápidamente, para que puedas empezar a vender sin complicaciones técnicas.',
+        icon: 'tabler:shopping-cart',
       },
       {
-        title: 'Branding',
+        title: 'Optimización de la Experiencia de Usuario (UX/UI)',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+          'Mejora la usabilidad de tu sitio web, aumentando la satisfacción del usuario y las tasas de conversión.',
+        icon: 'tabler:user-circle',
       },
       {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
+        title: 'Cursos y Entrenamientos',
+        description: 'Capacita a tu equipo y aprende a manejar las herramientas digitales necesarias para el éxito.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+        title: 'Soluciones de Hosting y Gestión de Dominios',
+        description: 'Ofrecemos hosting rápido y seguro, gestionando todos los aspectos técnicos para tu tranquilidad.',
+        icon: 'tabler:cloud',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      alt: 'Imagen de creatividad y tecnología',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Nuestros Valores"
+    subtitle="Nos guiamos por principios que garantizan la satisfacción de nuestros clientes y el éxito de nuestros proyectos."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Enfoque en el Cliente',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'Ponemos tus necesidades en primer lugar, desarrollando soluciones personalizadas que agregan valor real a tu negocio.',
       },
       {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+        title: 'Mejora Continua',
+        description: 'Nos mantenemos al día con las últimas tecnologías y tendencias para ofrecerte siempre lo mejor.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Prácticas Éticas',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'Trabajamos con integridad, asegurándonos de que todas nuestras soluciones sean responsables y sostenibles.',
       },
     ]}
   />
@@ -150,29 +166,29 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Nuestros Logros"
+    subtitle="Nuestro compromiso y dedicación nos han llevado a ser reconocidos en la industria tecnológica."
     isReversed={true}
     callToAction={{
-      text: 'See more',
+      text: 'Conoce más',
       href: '/',
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        title: 'Alcance Global',
+        description:
+          'Hemos trabajado con clientes en múltiples países, adaptándonos a diferentes mercados y necesidades.',
         icon: 'tabler:globe',
       },
       {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+        title: 'Retroalimentación Positiva',
+        description: 'Nuestros clientes destacan la calidad y efectividad de nuestras soluciones en sus negocios.',
         icon: 'tabler:message-star',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Premios y Reconocimientos',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+          'Somos reconocidos como expertos en el sector, gracias a nuestra dedicación e innovación constante.',
         icon: 'tabler:award',
       },
     ]}
@@ -181,47 +197,13 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
+    title="Nuestra Ubicación"
+    tagline="Encuéntranos"
+    columns={1}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
-      {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
-      },
-      {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+        title: 'Panamá, Las Cumbres',
+        description: 'Ubicados en un lugar estratégico, ofrecemos servicios tanto a nivel local como internacional.',
       },
     ]}
   />
