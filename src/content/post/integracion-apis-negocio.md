@@ -6,10 +6,10 @@ excerpt: Aprende qué es la integración de APIs, cómo funciona y cómo puede t
 image: https://images.unsplash.com/photo-1531497865144-0464d2d2e602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80
 category: Integración de APIs
 tags:
-  - "APIs"
-  - "integración"
-  - "automatización"
-  - "eficiencia"
+  - 'APIs'
+  - 'integración'
+  - 'automatización'
+  - 'eficiencia'
 metadata:
   canonical: https://infrony.com/integracion-apis-negocio
 ---

@@ -6,10 +6,10 @@ excerpt: Descubre cómo la transformación digital puede llevar a tu pequeña em
 image: https://pixabay.com/get/g2284b698846af8d1cd2e7ca89f3de4d7997cfe3d386d2dd19ee13b671cff926013d447d901d8cb978df68cdfe9aebfd0_1280.jpg
 category: Transformación Digital
 tags:
-  - "transformación digital"
-  - "pymes"
-  - "tecnología"
-  - "2024"
+  - 'transformación digital'
+  - 'pymes'
+  - 'tecnología'
+  - '2024'
 metadata:
   canonical: https://infrony.com/10-estrategias-transformacion-digital-2024
 ---

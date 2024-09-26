@@ -6,10 +6,10 @@ excerpt: Descubre los errores más comunes en el desarrollo de software y aprend
 image: https://images.unsplash.com/photo-1601119479271-21ca92049c81?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 category: Desarrollo de Software
 tags:
-  - "desarrollo de software"
-  - "errores comunes"
-  - "mejores prácticas"
-  - "productividad"
+  - 'desarrollo de software'
+  - 'errores comunes'
+  - 'mejores prácticas'
+  - 'productividad'
 metadata:
   canonical: https://infrony.com/errores-comunes-desarrollo-software
 ---
