@@ -4,14 +4,15 @@ site:
   base: '/'
   trailingSlash: false
 
+  # Añadir ID de verificación de Google para SEO
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
   title:
     default: 'Servitech Infrony'
-    template: '%s — Infrony'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    template: '%s — Soluciones Tecnológicas'
+  description: "🚀 Soluciones Tecnológicas para Empresas, Desarrollo Web y Móvil, Integración de APIs, E-commerce, Diseño UX/UI y más. Tu aliado en la transformación digital."
   robots:
     index: true
     follow: true
@@ -27,10 +28,12 @@ metadata:
     site: '@infrony'
     cardType: summary_large_image
 
+# Internationalization settings
 i18n:
   language: es
   textDirection: ltr
 
+# Blog settings
 apps:
   blog:
     isEnabled: true
@@ -50,23 +53,42 @@ apps:
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'categoria' # Category main path /categoria/some-category, personalized for Spanish language
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'etiqueta' # Tag main path /etiqueta/some-tag, personalized for Spanish language
       robots:
         index: false
 
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
 
+# Analytics setup for tracking website performance
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: 'G-4DN11WM7XJ' # Replace with your Google Analytics ID
 
+# UI and theme customization
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system' # Options: "system" | "light" | "dark" | "light:only" | "dark:only"
+
+# Additional settings to enhance visibility and brand alignment
+branding:
+  primaryColor: '#4CAF50' # Use colors from your brand
+  secondaryColor: '#8BC34A'
+  accentColor: '#FFC107'
+
+# SEO enhancements for better visibility
+seo:
+  keywords: ['Soluciones Tecnológicas', 'Desarrollo Web', 'Transformación Digital', 'E-commerce', 'Diseño UX/UI', 'Automatización']
+  author: 'Servitech Infrony'
+
+# Social Media links (useful for driving traffic to your platforms)
+social:
+  facebook: 'https://bit.ly/fb-servitech-infrony'
+  instagram: 'https://bit.ly/ig-servitech-infrony'
+  twitter: 'https://bit.ly/x-servitech-infrony'

@@ -121,63 +121,56 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Servicios',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Consultoría Tecnológica', href: '/services#consultoria' },
+        { text: 'Desarrollo Web y Móvil', href: '/services#desarrollo-web' },
+        { text: 'Mantenimiento de Sitios', href: '/services#mantenimiento' },
+        { text: 'Integración de APIs', href: '/services#integracion-apis' },
+        { text: 'Diseño Gráfico y Branding', href: '/services#diseno-grafico' },
+        { text: 'Creación de E-commerce', href: '/services#ecommerce' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Recursos',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Blog', href: '/blog' },
+        // { text: 'Casos de Éxito', href: '/casos-exito' },
+        { text: 'Tutoriales', href: '/tag/tutoriales' },
+        { text: 'Guías y Documentación', href: '/tag/docs' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Soporte',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Contacto', href: '/contact' },
+        { text: 'Chat en Vivo', href: '#' }, // Puede ser un enlace a un chat en vivo si lo tienes implementado
+        // { text: 'Consultas Frecuentes', href: '/faqs' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Compañía',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Nosotros', href: '/about' },
+        { text: 'Política de Privacidad', href: '/privacy' },
+        { text: 'Términos y Condiciones', href: '/terms' },
+        { text: 'Blog', href: '/blog' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Términos y Condiciones', href: getPermalink('/terms') },
+    { text: 'Política de Privacidad', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://bit.ly/x-servitech-infrony' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://bit.ly/ig-servitech-infrony' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://bit.ly/fb-servitech-infrony' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://bit.ly/li-servitech-infrony' }, // Añadido LinkedIn si tienes perfil empresarial
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/infrony' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://infrony.net/favicon/favicon-32x32.png" alt="Servitech Infrony logo" loading="lazy"></img>
+    Hecho por <a class="text-blue-600 underline dark:text-muted" href="https://infrony.com/"> Servitech Infrony</a> · Todos los derechos reservados.
   `,
 };
