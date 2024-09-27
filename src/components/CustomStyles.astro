@@ -1,48 +1,63 @@
 ---
-import '@fontsource/poppins';
-import '@fontsource/ibm-plex-sans';
+import '@fontsource-variable/inter';
+
+// 'DM Sans'
+// Nunito
+// Dosis
+// Outfit
+// Roboto
+// Literata
+// 'IBM Plex Sans'
+// Karla
+// Poppins
+// 'Fira Sans'
+// 'Libre Franklin'
+// Inconsolata
+// Raleway
+// Oswald
+// 'Space Grotesk'
+// Urbanist
 ---
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'Poppins', sans-serif;
-    --aw-font-serif: 'IBM Plex Sans', sans-serif;
-    --aw-font-heading: 'Poppins', sans-serif;
+    --aw-font-sans: 'Inter Variable';
+    --aw-font-serif: 'Inter Variable';
+    --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: #a2c539; /* Verde Limón */
-    --aw-color-secondary: #3a3a3a; /* Gris Oscuro */
-    --aw-color-accent: #f0f0f0; /* Gris Claro */
+    --aw-color-primary: rgb(1 97 239);
+    --aw-color-secondary: rgb(1 84 207);
+    --aw-color-accent: rgb(109 40 217);
 
-    --aw-color-text-heading: #3a3a3a; /* Gris Oscuro para Encabezados */
-    --aw-color-text-default: #333333; /* Gris Neutro */
-    --aw-color-text-muted: #3a3a3a; /* Gris Oscuro para texto secundario */
-    --aw-color-bg-page: #ffffff; /* Fondo Blanco */
+    --aw-color-text-heading: rgb(0 0 0);
+    --aw-color-text-default: rgb(16 16 16);
+    --aw-color-text-muted: rgb(16 16 16 / 66%);
+    --aw-color-bg-page: rgb(255 255 255);
 
-    --aw-color-bg-page-dark: #2e2e2e; /* Fondo Oscuro para modo noche */
+    --aw-color-bg-page-dark: rgb(3 6 32);
 
     ::selection {
-      background-color: #a2c539; /* Verde Limón para selección de texto */
-      color: #ffffff;
+      background-color: lavender;
     }
   }
 
   .dark {
-    --aw-font-sans: 'Poppins', sans-serif;
-    --aw-font-serif: 'IBM Plex Sans', sans-serif;
-    --aw-font-heading: 'Poppins', sans-serif;
+    --aw-font-sans: 'Inter Variable';
+    --aw-font-serif: 'Inter Variable';
+    --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: #a2c539; /* Mantén el verde para consistencia */
-    --aw-color-secondary: #3a3a3a;
-    --aw-color-accent: #f0f0f0;
+    --aw-color-primary: rgb(1 97 239);
+    --aw-color-secondary: rgb(1 84 207);
+    --aw-color-accent: rgb(109 40 217);
 
-    --aw-color-text-heading: #f0f0f0; /* Texto claro en modo oscuro */
-    --aw-color-text-default: #e0e0e0;
-    --aw-color-text-muted: #b0b0b0;
-    --aw-color-bg-page: #2e2e2e; /* Fondo gris oscuro para una experiencia cómoda */
+    --aw-color-text-heading: rgb(247, 248, 248);
+    --aw-color-text-default: rgb(229 236 246);
+    --aw-color-text-muted: rgb(229 236 246 / 66%);
+    --aw-color-bg-page: rgb(3 6 32);
 
     ::selection {
-      background-color: #3a3a3a; /* Selección de texto en gris oscuro */
-      color: #ffffff;
+      background-color: black;
+      color: snow;
     }
   }
 </style>
