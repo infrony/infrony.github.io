@@ -3,7 +3,7 @@ publishDate: 2024-09-25T00:00:00Z
 author: Infrony
 title: 10 Estrategias de Transformación Digital para Pequeñas Empresas en 2024
 excerpt: Descubre cómo la transformación digital puede llevar a tu pequeña empresa al siguiente nivel en 2024 con estrategias prácticas y herramientas esenciales.
-image: https://pixabay.com/get/g2284b698846af8d1cd2e7ca89f3de4d7997cfe3d386d2dd19ee13b671cff926013d447d901d8cb978df68cdfe9aebfd0_1280.jpg
+image: https://infrony.com/photo_2024-09-27%2018.47.28.jpeg
 category: Transformación Digital
 tags:
   - 'transformación digital'
