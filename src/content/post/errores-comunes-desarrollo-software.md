@@ -3,7 +3,7 @@ publishDate: 2024-09-25T00:00:00Z
 author: Infrony
 title: Los 7 Errores Comunes en el Desarrollo de Software y Cómo Evitarlos
 excerpt: Descubre los errores más comunes en el desarrollo de software y aprende cómo evitarlos para garantizar proyectos exitosos y eficientes.
-image: https://images.unsplash.com/photo-1601119479271-21ca92049c81?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/errores-comunes-desarrollo-software.webp
 category: Desarrollo de Software
 tags:
   - 'desarrollo de software'

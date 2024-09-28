@@ -3,7 +3,7 @@ publishDate: 2024-09-25T00:00:00Z
 author: Infrony
 title: Cómo un Diseño Web Profesional Puede Aumentar tus Ventas Online
 excerpt: Descubre cómo un diseño web profesional puede transformar tu sitio en una máquina de ventas efectiva, mejorando la experiencia del usuario y aumentando la conversión.
-image: https://pixabay.com/get/gd48c4f9e3ff941c1f074ab9d0e5abdb1d662218135fa312ad42b751d7c0c33502fc5e0e35eb5e909a661532403e354b4_1280.jpg
+image: https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/imagen-programadora-web.webp
 category: Diseño Web
 tags:
   - 'diseño web'

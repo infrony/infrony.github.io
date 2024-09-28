@@ -3,7 +3,7 @@ publishDate: 2024-09-25T00:00:00Z
 author: Infrony
 title: Las Mejores Herramientas para Automatizar tu Negocio en 2024
 excerpt: Descubre las herramientas de automatización más efectivas para optimizar tu negocio en 2024 y aumentar tu productividad sin esfuerzo.
-image: https://pixabay.com/get/g8d702140bbb4ddebc1101ac23897110557574149682a311c9595bfed93634c55be29fa068e0ec0db05b6a2ffaffda43e_1280.jpg
+image: https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/herramientas-para-automatizar.webp
 category: Automatización
 tags:
   - 'automatización'

@@ -3,7 +3,7 @@ publishDate: 2024-09-25T00:00:00Z
 author: Infrony
 title: Integración de APIs Qué es, Cómo Funciona y Por Qué tu Negocio la Necesita
 excerpt: Aprende qué es la integración de APIs, cómo funciona y cómo puede transformar tu negocio al conectar aplicaciones y automatizar procesos.
-image: https://images.unsplash.com/photo-1531497865144-0464d2d2e602?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80
+image: https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/integracion-api-negocio.webp
 category: Integración de APIs
 tags:
   - 'APIs'
@@ -20,7 +20,7 @@ En un mundo digital donde las aplicaciones y plataformas están en constante evo
 
 Una **API** (Interfaz de Programación de Aplicaciones, por sus siglas en inglés) es un conjunto de definiciones y protocolos que permite que una aplicación se comunique con otra. Básicamente, una API actúa como un puente que permite que diferentes softwares se conecten y compartan datos entre sí de manera segura y eficiente.
 
-![Ejemplo de API](https://www.seobility.net/es/wiki/images/b/b3/API-Rest.png)
+![Ejemplo de API](https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/ejemplo-api-basica.webp)
 
 ## ¿Cómo Funciona la Integración de APIs?
 
@@ -42,7 +42,7 @@ La automatización es uno de los beneficios más significativos de la integraci�
 
 Imagina que tienes una tienda online que utiliza una API para conectar tu sistema de ventas con un CRM como HubSpot. Cada vez que un cliente realiza una compra, los datos se actualizan automáticamente en el CRM, permitiendo a tu equipo de ventas hacer seguimiento sin necesidad de introducir la información manualmente.
 
-![Automatización de Ventas](https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![Automatización de Ventas](https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/api-automatizacion-ventas.webp)
 
 ### 2. **Mejora en la Experiencia del Cliente**
 
@@ -64,7 +64,7 @@ Si tu negocio está creciendo internacionalmente, puedes integrar APIs de múlti
 
 Con la integración de APIs, puedes conectar tu sitio web o plataforma con herramientas de análisis como Google Analytics para obtener reportes en tiempo real sobre el comportamiento de los usuarios. Esto te permite tomar decisiones informadas basadas en datos actuales y precisos.
 
-![Análisis en Tiempo Real](https://images.unsplash.com/photo-1611328573001-13cf452dd8a9?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![Análisis en Tiempo Real](https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/analisi-y-reporte-en-tiempo-real.webp)
 
 ### 5. **Reducción de Costos Operativos**
 
