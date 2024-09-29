@@ -140,6 +140,17 @@ const metadata = {
   .was-validated :invalid {
     border-color: #dc3545;
   }
+
+  /* Cambiar el color del texto en los campos de entrada */
+  input,
+  textarea {
+    color: #000000; /* Asegura que el color del texto sea más oscuro */
+  }
+
+  /* Cambiar el color del placeholder para que no se confunda con el texto */
+  ::placeholder {
+    color: #888888; /* Un color gris más claro para diferenciar del texto */
+  }
 </style>
 
 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
