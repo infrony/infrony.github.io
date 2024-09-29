@@ -89,4 +89,4 @@ Al continuar accediendo o utilizando nuestro servicio después de que esas revis
 Si tiene alguna pregunta sobre estos Términos y Condiciones, puede contactarnos:
 
 - Por email: <hola@infrony.com>
-- Por teléfono: +507 68929449
+- Por teléfono o WhatsApp: +507 65772083

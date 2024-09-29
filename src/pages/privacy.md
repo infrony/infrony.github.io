@@ -90,4 +90,4 @@ Le recomendamos que revise esta Política de Privacidad periódicamente para cua
 Si tiene alguna pregunta sobre esta Política de Privacidad, puede contactarnos:
 
 - Por email: <hola@infrony.com>
-- Por teléfono: +507 68929449
+- Por teléfono o WhatsApp: +507 65772083
