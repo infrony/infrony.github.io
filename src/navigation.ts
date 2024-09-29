@@ -166,7 +166,6 @@ export const footerData = {
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://bit.ly/x-servitech-infrony' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://bit.ly/ig-servitech-infrony' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://bit.ly/fb-servitech-infrony' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://bit.ly/li-servitech-infrony' }, // Añadido LinkedIn si tienes perfil empresarial
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/infrony' },
   ],
   footNote: `
