@@ -144,7 +144,7 @@ export const footerData = {
       title: 'Soporte',
       links: [
         { text: 'Contacto', href: '/contact' },
-        { text: 'Chat en Vivo', href: '#' }, // Puede ser un enlace a un chat en vivo si lo tienes implementado
+        { text: 'Chat en Vivo', href: 'https://wa.me/message/NQ2M2DC3AEDZD1' }, // Puede ser un enlace a un chat en vivo si lo tienes implementado
         // { text: 'Consultas Frecuentes', href: '/faqs' },
       ],
     },
@@ -169,6 +169,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/infrony' },
   ],
   footNote: `
-    Por <a class="text-blue-600 underline dark:text-muted" href="https://infrony.dev/"> Infrony</a> · Todos los derechos reservados.
+    Por <a class="text-blue-600 underline dark:text-muted" href="https://infrony.dev/"> infrony.dev</a> · Todos los derechos reservados.
   `,
 };
