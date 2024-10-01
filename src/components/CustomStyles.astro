@@ -1,22 +1,5 @@
 ---
 import '@fontsource-variable/inter';
-
-// 'DM Sans'
-// Nunito
-// Dosis
-// Outfit
-// Roboto
-// Literata
-// 'IBM Plex Sans'
-// Karla
-// Poppins
-// 'Fira Sans'
-// 'Libre Franklin'
-// Inconsolata
-// Raleway
-// Oswald
-// 'Space Grotesk'
-// Urbanist
 ---
 
 <style is:inline>
@@ -25,9 +8,10 @@ import '@fontsource-variable/inter';
     --aw-font-serif: 'Inter Variable';
     --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    /* Colores basados en tu logo */
+    --aw-color-primary: #123456; /* Reemplaza con el color azul oscuro del logo */
+    --aw-color-secondary: #789abc; /* Reemplaza con el color celeste del logo */
+    --aw-color-accent: #def012; /* Reemplaza con otro color de acento que desees usar del logo */
 
     --aw-color-text-heading: rgb(0 0 0);
     --aw-color-text-default: rgb(16 16 16);
@@ -37,7 +21,8 @@ import '@fontsource-variable/inter';
     --aw-color-bg-page-dark: rgb(3 6 32);
 
     ::selection {
-      background-color: lavender;
+      background-color: #def012; /* Reemplaza con el color de selección del logo */
+      color: white;
     }
   }
 
@@ -46,9 +31,9 @@ import '@fontsource-variable/inter';
     --aw-font-serif: 'Inter Variable';
     --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: #123456; /* Color principal oscuro */
+    --aw-color-secondary: #789abc;
+    --aw-color-accent: #def012;
 
     --aw-color-text-heading: rgb(247, 248, 248);
     --aw-color-text-default: rgb(229 236 246);
@@ -56,7 +41,7 @@ import '@fontsource-variable/inter';
     --aw-color-bg-page: rgb(3 6 32);
 
     ::selection {
-      background-color: black;
+      background-color: #def012;
       color: snow;
     }
   }
@@ -85,11 +70,10 @@ import '@fontsource-variable/inter';
   .sticky-icon {
     width: 35px;
     height: 35px;
-    color: white; /* Cambia el color del icono a blanco */
+    color: white;
   }
 
   @media screen and (max-width: 768px) {
-    /* Ajuste del botón para pantallas móviles */
     .sticky-btn {
       bottom: 15px;
       right: 15px;
