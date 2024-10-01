@@ -37,12 +37,36 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
-
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        (w as unknown as { [key: string]: unknown })[l] = (w as unknown as { [key: string]: unknown })[l] || [];
+        (w as unknown as { [key: string]: unknown[] })[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        const f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s) as HTMLScriptElement,
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        (j as HTMLScriptElement).async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        if (f && f.parentNode) {
+          f.parentNode.insertBefore(j, f);
+        }
+      })(window, document, 'script', 'dataLayer', 'GTM-TZLKLV5Z');
+    </script>
+    <!-- End Google Tag Manager -->
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TZLKLV5Z"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     <slot />
 
     <!-- Sticky WhatsApp Button -->
