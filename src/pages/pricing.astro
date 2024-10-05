@@ -6,6 +6,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Header from '~/components/widgets/Header.astro';
 
 const metadata = {
   title: 'Planes de Diseño Web',
@@ -13,6 +14,27 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Inicio', href: '/' },
+        { text: 'Nosotros', href: '/about' },
+        { text: 'Servicios', href: '/services' },
+        { text: 'Planes', href: '/pricing' },
+        { text: 'Blog', href: '/blog' },
+        { text: 'Github', href: 'https://github.com/infrony' },
+      ]}
+      actions={[
+        {
+          text: 'Contáctanos',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+      showRssFeed
+      showToggleTheme
+    />
+  </Fragment>
   <!-- HeroText Widget ******************* -->
 
   <HeroText
