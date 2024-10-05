@@ -8,7 +8,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Planes de Diseño Web',
 };
 ---
 
@@ -16,95 +16,113 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline="Planes de Diseño Web"
+    title="Elige el plan que se ajuste a tus necesidades"
+    subtitle="Nuestras soluciones están diseñadas para ofrecerte lo mejor en rendimiento y diseño."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Nuestros Paquetes"
+    subtitle="Solo paga por lo que realmente necesitas"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'Landing Page',
+        subtitle: 'Ideal para emprendedores o pequeñas empresas',
+        price: 199,
+        period: 'Pago único',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Diseño de página web con llamada a la acción efectiva',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Optimización básica de SEO',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Integración con Google Analytics y redes sociales',
           },
           {
-            description: 'In hac habitasse',
+            description: 'Certificado SSL para seguridad',
+          },
+          {
+            description: 'Hosting y dominio GRATIS',
+          },
+          {
+            description: 'Sitio listo en 10 días',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Empieza ahora',
+          href: 'https://www.paypal.com/ncp/payment/3R72Q3AY2YR34',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'Sitio Web Corporativo',
+        subtitle: 'Perfecto para pequeñas y medianas empresas',
+        price: 499,
+        period: 'Pago único',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Hasta 7 páginas con diseño personalizado',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'SEO avanzado y optimización de velocidad',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Formularios de contacto y suscripción',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: 'Mantenimiento y soporte por 3 meses',
           },
           {
-            description: 'Donec fringilla sem',
+            description: 'Integración con Google Analytics y redes sociales',
+          },
+          {
+            description: 'Hosting y dominio GRATIS por 1 año',
+          },
+          {
+            description: 'Sitio listo en 15 días',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Empieza ahora',
+          href: 'https://www.paypal.com/ncp/payment/978LZZG3AM96G',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'E-commerce',
+        subtitle: 'Solución completa para tiendas online',
+        price: 999,
+        period: 'Pago único',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Desarrollo de tienda online con carrito de compras',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Integración de pasarelas de pago seguras',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Catálogo de productos y gestión de inventarios',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'SEO avanzado y configuración de marketing por correo',
+          },
+          {
+            description: 'Hosting y dominio GRATIS por 1 año',
+          },
+          {
+            description: 'Mantenimiento y soporte por 6 meses',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Empieza ahora',
+          href: 'https://www.paypal.com/ncp/payment/7LXFA68HLLGZS',
         },
       },
     ]}
@@ -113,38 +131,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Características de nuestros planes"
+    subtitle="Descubre las ventajas de nuestros paquetes"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
+        title: 'Precios flexibles',
+        description: 'Elige entre diferentes planes adaptados a tu tipo de negocio y presupuesto.',
         icon: 'tabler:stairs',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
+        title: 'Transparencia total',
+        description: 'Nuestros planes no tienen costos ocultos, todo lo que ves es lo que pagas.',
         icon: 'tabler:flip-vertical',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
+        title: 'Pagos seguros',
+        description: 'Ofrecemos métodos de pago seguros para proteger tu información.',
         icon: 'tabler:shield-lock',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
+        title: 'Acceso inmediato',
+        description: 'Empieza a trabajar en tu sitio web de inmediato después de la confirmación de tu pedido.',
         icon: 'tabler:accessible',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
+        title: 'Actualizaciones flexibles',
+        description: 'Cambia a un plan superior en cualquier momento para desbloquear nuevas funcionalidades.',
         icon: 'tabler:chevrons-up',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Soporte 24/7',
+        description:
+          'Estamos aquí para ayudarte en cualquier momento, a través de whatsapp, correo electrónico o teléfono.',
         icon: 'tabler:headset',
       },
     ]}
@@ -154,76 +173,67 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="Proceso paso a paso"
+    tagline="simple y claro"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Explora los planes',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Selecciona un plan',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Clic en el botón de empiece ahora',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Revisa tu pedido',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'Introduce los detalles de pago',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'Confirmación',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'No comunicamos inmediatamente con el cliente para empezar a trabajar',
         icon: 'tabler:number-7',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'Pasos para obtener tu sitio web',
     }}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    title="Preguntas frecuentes"
+    subtitle="Resuelve tus dudas sobre los planes"
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
-        description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+        title: '¿Los planes incluyen soporte técnico?',
+        description: 'Sí, todos nuestros planes incluyen soporte técnico durante un periodo de tiempo específico.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+        title: '¿Puedo cambiar de plan más adelante?',
+        description: 'Claro, puedes actualizar o degradar tu plan en cualquier momento.',
       },
       {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+        title: '¿Qué métodos de pago aceptan?',
+        description: 'Aceptamos todas las principales tarjetas de crédito y otros métodos de pago en línea.',
       },
       {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
-      },
-      {
-        title: 'Are there any hidden fees beyond the displayed cost?',
-        description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+        title: '¿Hay algún costo adicional?',
+        description: 'No, nuestros precios son finales. No hay cargos ocultos.',
       },
     ]}
   />
@@ -231,13 +241,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="¿Listo para impulsar tu presencia online?"
+    subtitle="Únete a nuestros clientes satisfechos y transforma tu sitio web con nosotros."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Comienza ahora',
+        href: 'https://wa.me/message/NQ2M2DC3AEDZD1',
       },
     ]}
   />

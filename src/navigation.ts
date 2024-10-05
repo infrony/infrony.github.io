@@ -152,8 +152,8 @@ export const footerData = {
       title: 'Compañía',
       links: [
         { text: 'Nosotros', href: '/about' },
-        { text: 'Política de Privacidad', href: '/privacy' },
-        { text: 'Términos y Condiciones', href: '/terms' },
+        { text: 'Servicios', href: '/services' },
+        { text: 'Planes de Diseño Web', href: '/pricing' },
         { text: 'Blog', href: '/blog' },
       ],
     },
