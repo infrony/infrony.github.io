@@ -12,7 +12,7 @@ metadata:
   title:
     default: 'Servitech Infrony'
     template: '%s — Soluciones Tecnológicas'
-  description: "🚀 Soluciones Tecnológicas para Empresas, Desarrollo Web y Móvil, Integración de APIs, E-commerce, Diseño UX/UI y más. Tu aliado en la transformación digital."
+  description: '🚀 Soluciones Tecnológicas para Empresas, Desarrollo Web y Móvil, Integración de APIs, E-commerce, Diseño UX/UI y más. Tu aliado en la transformación digital.'
   robots:
     index: true
     follow: true
@@ -61,7 +61,7 @@ apps:
       isEnabled: true
       pathname: 'etiqueta' # Tag main path /etiqueta/some-tag, personalized for Spanish language
       robots:
-        index: false
+        index: true
 
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
@@ -84,7 +84,15 @@ branding:
 
 # SEO enhancements for better visibility
 seo:
-  keywords: ['Soluciones Tecnológicas', 'Desarrollo Web', 'Transformación Digital', 'E-commerce', 'Diseño UX/UI', 'Automatización']
+  keywords:
+    [
+      'Soluciones Tecnológicas',
+      'Desarrollo Web',
+      'Transformación Digital',
+      'E-commerce',
+      'Diseño UX/UI',
+      'Automatización',
+    ]
   author: 'Servitech Infrony'
 
 # Social Media links (useful for driving traffic to your platforms)
