@@ -1,41 +1,169 @@
 ---
 import Layout from '~/layouts/LandingLayout.astro';
-
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
-const metadata = {
-  title: 'Subscription Landing Page Demo',
-};
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import { SITE } from 'astrowind:config';
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={{ title: 'Página de Suscripción para Servitech Infrony' }}>
   <!-- Hero2 Widget ******************* -->
-
   <Hero2
-    tagline="Subscription Landing Demo"
-    title="Subscription Landing Page: Turn Casual Browsers into Loyal Subscribers!"
-    subtitle="Unlock the formula for a Subscription Landing Page that keeps your audience coming back for more."
+    tagline="¡No te pierdas nada!"
+    title="Suscríbete y Mantente al Día con Nuestras Soluciones"
+    subtitle="Regístrate para recibir las últimas actualizaciones, novedades y ofertas exclusivas directamente en tu bandeja de entrada."
     actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
+      { variant: 'primary', text: 'Suscríbete Ahora', href: '#formulario', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Descubre más', href: '#features' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1593510987046-1f8fcfc512a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Ironic image associated with canceling a subscription. Subscription Landing Page Demo',
+      alt: 'Imagen simbólica de suscripción. Landing page de suscripción',
     }}
   />
 
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
-  />
+  <!-- Features Widget ************** -->
+  <section id="features" class="py-12">
+    <Features3
+      title="¿Por qué suscribirse?"
+      subtitle="Beneficios que obtienes al ser parte de nuestra comunidad"
+      columns={3}
+      items={[
+        {
+          title: 'Acceso a contenido exclusivo',
+          description: 'Recibe guías, tutoriales y recursos gratuitos sobre tecnología y desarrollo web.',
+          icon: 'tabler:star',
+        },
+        {
+          title: 'Descuentos en servicios',
+          description: 'Sé el primero en conocer nuestras ofertas especiales y descuentos en paquetes de diseño web.',
+          icon: 'tabler:discount',
+        },
+        {
+          title: 'Soporte prioritario',
+          description: 'Obtén acceso a soporte técnico prioritario como suscriptor premium.',
+          icon: 'tabler:headset',
+        },
+      ]}
+    />
+  </section>
+
+  <!-- Testimonios Section ************** -->
+  <section id="testimonials" class="py-12 bg-gray-100">
+    <Testimonials
+      title="Lo que dicen nuestros suscriptores"
+      subtitle="Conoce las experiencias de quienes ya son parte de nuestra comunidad"
+      testimonials={[
+        {
+          name: 'Marta López',
+          job: 'Emprendedora',
+          testimonial:
+            'Desde que me suscribí a Servitech Infrony, he mejorado mi presencia online y mi sitio web ha atraído más clientes.',
+          image: 'https://randomuser.me/api/portraits/women/49.jpg',
+        },
+        {
+          name: 'Diego Fernández',
+          job: 'CEO, Startup Digital',
+          testimonial:
+            'Las ofertas exclusivas y el contenido que recibo son invaluables para el crecimiento de mi negocio.',
+          image: 'https://randomuser.me/api/portraits/men/52.jpg',
+        },
+      ]}
+    />
+  </section>
+
+  <!-- Contact Form (Suscripción) ************** -->
+  <section id="formulario" class="py-12 bg-primary text-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-center">Suscríbete y Mantente Informado</h2>
+      <p class="text-center mb-6">
+        Déjanos tu email y únete a nuestra comunidad para no perderte ninguna actualización ni oferta especial.
+      </p>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="w-full max-w-md mx-auto"
+        id="subscription-form"
+      >
+        <input type="hidden" name="access_key" value={SITE.web3formsApiKey} />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+        <div class="mb-4">
+          <label for="email" class="block text-white text-lg mb-2">Tu correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 text-black rounded-md"
+            placeholder="Ingresa tu email"
+          />
+        </div>
+
+        <button type="submit" class="w-full bg-accent text-white py-3 rounded-md hover:bg-accent-dark transition"
+          >Suscribirme</button
+        >
+
+        <!-- Mensaje de éxito/error -->
+        <div id="form-message" class="text-center mt-4"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Call to Action Section ************** -->
+  <section class="py-12 bg-secondary text-white text-center">
+    <CallToAction
+      title="¡Únete a nuestra comunidad hoy!"
+      subtitle="Obtén actualizaciones, descuentos exclusivos y contenido personalizado para hacer crecer tu negocio."
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Suscríbete Ahora',
+          href: '#formulario',
+          icon: 'tabler:mail',
+        },
+      ]}
+    />
+  </section>
 </Layout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('subscription-form');
+    const messageDiv = document.getElementById('form-message');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      messageDiv.textContent = 'Enviando...';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          const json = await response.json();
+          if (response.status === 200) {
+            messageDiv.classList.add('text-green-500');
+            messageDiv.textContent = json.message;
+          } else {
+            messageDiv.classList.add('text-red-500');
+            messageDiv.textContent = json.message;
+          }
+        })
+        .catch((_error) => {
+          messageDiv.classList.add('text-red-500');
+          messageDiv.textContent = 'Algo salió mal. Por favor, inténtalo nuevamente.';
+        });
+    });
+  });
+</script>

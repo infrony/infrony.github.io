@@ -7,6 +7,8 @@ site:
   # Añadir ID de verificación de Google para SEO
   googleSiteVerificationId: n1vhO1_mfclQhh86YaOYe50X7hPcClVpxtaisVVbmgk
 
+  web3formsApiKey: '158949aa-8109-4dc2-8c5e-5884e214be84'
+
 # Default SEO metadata
 metadata:
   title:

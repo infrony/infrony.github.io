@@ -2,40 +2,85 @@
 import Layout from '~/layouts/LandingLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Product Details Landing Page Demo',
+  title: 'Landing Page de Producto: Descubre el Poder de tu Producto',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero2 Widget ******************* -->
+  <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Product Details Demo"
-    title="Product Landing Page: Showcase with Precision and Passion!"
-    subtitle="Step-by-step guide to designing a Landing Page that highlights every facet of your product or service."
+    tagline="Lanzamiento de Producto"
+    title="Landing Page de Producto: Destaca cada detalle con precisión"
+    subtitle="Muestra las características más importantes de tu producto y cómo puede mejorar la vida de tus clientes."
     actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
+      { variant: 'primary', text: 'Comprar Ahora', href: '#comprar', icon: 'tabler:shopping-cart' },
+      { text: 'Conoce más', href: '#features' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1473188588951-666fce8e7c68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2174&q=80',
-      alt: 'A spotlight on a product. Product Details Landing Page Demo',
+      alt: 'Producto bajo los reflectores en una landing page',
     }}
   />
 
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
-  />
+  <!-- Features Widget ************** -->
+  <section id="features" class="py-12">
+    <Features3
+      title="Características del Producto"
+      subtitle="Lo que hace que nuestro producto sea único"
+      columns={3}
+      items={[
+        {
+          title: 'Alta Calidad',
+          description: 'Construido con los mejores materiales para ofrecer durabilidad y resistencia.',
+          icon: 'tabler:check',
+        },
+        {
+          title: 'Fácil de Usar',
+          description: 'Interfaz intuitiva y fácil de aprender para todos los usuarios.',
+          icon: 'tabler:device-laptop',
+        },
+        {
+          title: 'Soporte Técnico 24/7',
+          description: 'Recibe ayuda cuando lo necesites, sin importar el día o la hora.',
+          icon: 'tabler:headset',
+        },
+        {
+          title: 'Entrega Rápida',
+          description: 'Recibe tu producto en tiempo récord con nuestras opciones de envío expreso.',
+          icon: 'tabler:truck',
+        },
+        {
+          title: 'Personalización Disponible',
+          description: 'Personaliza tu producto según tus necesidades y estilo.',
+          icon: 'tabler:tools',
+        },
+        {
+          title: 'Garantía de Satisfacción',
+          description: 'Si no estás satisfecho, te devolvemos tu dinero sin complicaciones.',
+          icon: 'tabler:thumb-up',
+        },
+      ]}
+    />
+  </section>
+
+  <!-- Call to Action Section ************** -->
+  <section id="comprar" class="py-12 bg-gray-100 text-center">
+    <CallToAction
+      title="¡Haz tu pedido ahora!"
+      subtitle="No pierdas la oportunidad de obtener este increíble producto. ¡Compra el tuyo ahora y disfruta de sus beneficios!"
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Comprar Ahora',
+          href: '#',
+          icon: 'tabler:shopping-cart',
+        },
+      ]}
+    />
+  </section>
 </Layout>

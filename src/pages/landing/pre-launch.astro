@@ -3,9 +3,10 @@ import Layout from '~/layouts/LandingLayout.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: 'Pre-Launch Landing Page',
+  title: '¡Próximamente! Anticipa Nuestro Lanzamiento',
 };
 ---
 
@@ -13,27 +14,76 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Pre-launch Demo"
-    title="Pre-launch Landing Page: Build the Hype Before the Big Reveal!"
-    subtitle="Craft a tantalizing Coming Soon or Pre-Launch Landing Page that leaves visitors eagerly awaiting your launch."
+    tagline="Pre-lanzamiento Exclusivo"
+    title="¡Sé el primero en descubrir nuestro nuevo producto!"
+    subtitle="Nuestro lanzamiento está a la vuelta de la esquina. Únete a nuestra lista y sé el primero en conocer todas las novedades."
     actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
+      { variant: 'primary', text: 'Notificarme del Lanzamiento', href: '#notify', icon: 'tabler:bell' },
+      { text: 'Descubre más', href: '#features' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1558803116-c1b4ac867b31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-      alt: 'Store with a Coming Soon sign. Pre-launch Landing Page',
+      alt: 'Tienda con letrero de "Próximamente". Página de Pre-Lanzamiento',
     }}
   />
 
+  <!-- Lead Generation Form ************** -->
+  <section id="notify" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4">Únete a nuestra lista de espera</h2>
+      <p class="text-center mb-6">
+        No te pierdas el lanzamiento. Deja tu correo y serás el primero en recibir las noticias.
+      </p>
+
+      <!-- Simple Contact Form for Notification -->
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-md"
+      >
+        <input type="hidden" name="access_key" value={SITE.web3formsApiKey} />
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Nombre Completo</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Correo Electrónico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+            required
+          />
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            Notificarme
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Call to Action Section ************** -->
+
   <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    title="¡Esté atento!"
+    subtitle="Estamos ultimando detalles para nuestro gran lanzamiento. ¡Te mantendremos informado!"
     actions={[
       {
         variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Descargar Plantilla',
+        href: '#',
         icon: 'tabler:download',
       },
     ]}

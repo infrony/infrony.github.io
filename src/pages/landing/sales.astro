@@ -1,11 +1,12 @@
 ---
 import Layout from '~/layouts/LandingLayout.astro';
-
 import Hero2 from '~/components/widgets/Hero2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Sales Landing Page Demo',
+  title: 'Página de Ventas para Servitech Infrony',
 };
 ---
 
@@ -13,29 +14,87 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Long-form Sales Demo"
-    title="Long-form Sales: Sell with a Story: The Long-form Way!"
-    subtitle="Dive deep into crafting a Landing Page that narrates, persuades, and converts."
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1626&q=80',
-      alt: 'Children telling a story. Long-form Sales Landing Page demo',
-    }}
-  />
-
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    tagline="Transforma tu Negocio"
+    title="Vende con Estrategia: Diseños Web que Atraen y Convencen"
+    subtitle="Descubre cómo nuestras soluciones de diseño web pueden ayudarte a capturar clientes y cerrar ventas de manera efectiva."
     actions={[
       {
         variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Conoce nuestros planes',
+        href: '#planes',
+        icon: 'tabler:square-rounded-arrow-right',
       },
+      { text: 'Lee más', href: '#features' },
     ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1626&q=80',
+      alt: 'Equipo de ventas trabajando juntos',
+    }}
   />
+
+  <!-- Features Widget ************** -->
+  <section id="features" class="py-12">
+    <Features3
+      title="¿Qué ofrecemos?"
+      subtitle="Soluciones web que se ajustan a tus necesidades"
+      columns={3}
+      items={[
+        {
+          title: 'Diseño web personalizado',
+          description: 'Creamos sitios web adaptados a la imagen y objetivos de tu negocio.',
+          icon: 'tabler:layout',
+        },
+        {
+          title: 'SEO optimizado',
+          description: 'Tu sitio web estará optimizado para los motores de búsqueda, ayudando a atraer más tráfico.',
+          icon: 'tabler:chart-line',
+        },
+        {
+          title: 'Soporte continuo',
+          description: 'Ofrecemos soporte técnico y mantenimiento para que tu web siempre esté en óptimas condiciones.',
+          icon: 'tabler:lifebuoy',
+        },
+      ]}
+    />
+  </section>
+
+  <!-- Testimonials Section ********** -->
+  <section id="testimonials" class="py-12 bg-gray-100">
+    <Testimonials
+      title="Lo que dicen nuestros clientes"
+      subtitle="Clientes satisfechos que han visto el impacto de nuestras soluciones"
+      testimonials={[
+        {
+          name: 'Ana Pérez',
+          job: 'CEO, Empresa XYZ',
+          testimonial:
+            'Servitech Infrony transformó por completo nuestra presencia digital. Las ventas en línea aumentaron un 30% en el primer mes.',
+          image: 'https://randomuser.me/api/portraits/women/44.jpg',
+        },
+        {
+          name: 'Carlos Gómez',
+          job: 'Fundador, Startup ABC',
+          testimonial:
+            'Gracias a su diseño web personalizado y soporte, hemos logrado captar más leads que nunca antes.',
+          image: 'https://randomuser.me/api/portraits/men/45.jpg',
+        },
+      ]}
+    />
+  </section>
+
+  <!-- Call to Action Section ************** -->
+  <section id="planes" class="py-12 bg-primary text-white text-center">
+    <CallToAction
+      title="¡Aumenta tus ventas hoy!"
+      subtitle="Elige uno de nuestros planes y comienza a transformar tu negocio con un diseño web profesional."
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Ver planes de precios',
+          href: '/pricing',
+          icon: 'tabler:cash',
+        },
+      ]}
+    />
+  </section>
 </Layout>

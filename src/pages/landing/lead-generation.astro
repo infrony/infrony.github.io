@@ -3,38 +3,108 @@ import Layout from '~/layouts/LandingLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { SITE } from 'astrowind:config';
 
 const metadata = {
-  title: 'Lead Generation Landing Page Demo',
+  title: 'Captura de Leads: Estrategias Efectivas para Impulsar tu Negocio',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero2 Widget ******************* -->
+  <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Lead Generation Landing Demo"
-    title="Effective Lead Generation Landing Page: Unlock the Secrets"
-    subtitle="Discover the secrets to creating a Landing Page that turns curious visitors into eager leads. (Your Hero should grab attention instantly. Use a powerful headline that speaks directly to your target audience.)"
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1597423498219-04418210827d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
-      alt: 'Magnet attracting screws. Lead generation landing page demo',
-    }}
-  />
-
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    tagline="Generación de Leads"
+    title="Impulsa tu negocio con una página de Captura de Leads"
+    subtitle="Descubre las claves para convertir a los visitantes en clientes potenciales. Una página de captación de leads efectiva puede hacer la diferencia en tu estrategia digital."
     actions={[
       {
         variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Solicita una demostración',
+        href: '#contact',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      { text: 'Conoce más', href: '#features' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1597423498219-04418210827d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Imagen de generación de leads',
+    }}
+  />
+
+  <!-- Lead Generation Form ************** -->
+
+  <section id="contact" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4">Obtén una Demostración Gratuita</h2>
+      <p class="text-center mb-6">
+        Llena el formulario a continuación para recibir una demostración gratuita de nuestras soluciones y descubre cómo
+        podemos ayudarte a aumentar tu generación de leads.
+      </p>
+
+      <!-- Simple Contact Form for Lead Generation -->
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-md"
+      >
+        <input type="hidden" name="access_key" value={SITE.web3formsApiKey} />
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Nombre Completo</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Correo Electrónico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-bold mb-2">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+            required></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Call to Action Section ************** -->
+
+  <CallToAction
+    title="¿Listo para aumentar tus leads?"
+    subtitle="Aprovecha nuestras herramientas para captar la atención de tu audiencia y convertirla en clientes potenciales."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Descarga la Guía Gratis',
+        href: '#',
         icon: 'tabler:download',
+      },
+      {
+        text: 'Contacta a nuestro equipo',
+        href: '#contact',
       },
     ]}
   />
