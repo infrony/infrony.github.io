@@ -5,7 +5,7 @@ import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Click-through Landing Page Demo',
+  title: 'Transformación Digital para tu Negocio',
 };
 ---
 
@@ -13,28 +13,39 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Click-through Demo"
-    title="Click-through Landing Page: The Perfect Bridge to Conversion!"
-    subtitle="Learn how to design a Click-Through Landing Page that seamlessly guides visitors to your main offer."
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Click-through Landing Page Hero Image',
-    }}
-  />
-
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    tagline="Servicios de Transformación Digital"
+    title="Impulsa el Crecimiento de tu Empresa con la Transformación Digital"
+    subtitle="Descubre cómo podemos ayudarte a modernizar tu negocio con soluciones tecnológicas innovadoras."
     actions={[
       {
         variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Solicitar Cotización',
+        href: 'https://wa.me/50765772083',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      { text: 'Más información', href: '/pricing' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNzMwNzV8MHwxfGFsbHwxfHx8fHx8fHwxNjY5NzUyODQx&ixlib=rb-4.0.3&q=80&w=1080',
+      alt: 'Transformación Digital en Acción',
+    }}
+  />
+
+  <!-- Call to Action ******************* -->
+
+  <CallToAction
+    title="¡Comienza la Transformación Digital Hoy!"
+    subtitle="No te quedes atrás en la era digital. Nuestro equipo está listo para ayudarte a implementar estrategias tecnológicas que acelerarán el crecimiento de tu negocio."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Solicitar una Consulta',
+        href: '/contact',
+        icon: 'tabler:message-circle',
+      },
+      {
+        text: 'Ver Casos de Éxito',
+        href: '/casos-exito',
       },
     ]}
   />
