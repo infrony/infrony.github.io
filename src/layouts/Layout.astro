@@ -37,6 +37,30 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+
+    <!-- Insert Schema.org structured data -->
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Servitech Infrony",
+        "url": "https://infrony.com",
+        "logo": "https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/logo-150dpi-vertical-only-logo%20(1).ico",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+507 65772083",
+          "contactType": "Customer Service",
+          "areaServed": "PA",
+          "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+          "https://www.facebook.com/servitechinfrony",
+          "https://www.instagram.com/servitech.infrony",
+          "https://www.linkedin.com/company/servitechinfrony"
+        ]
+      }
+    </script>
+
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
