@@ -11,7 +11,7 @@ tags:
   - 'mejorar conversiones'
   - 'experiencia de usuario'
 metadata:
-  canonical: https://infrony.com/como-un-diseño-web-profesional-aumenta-ventas
+  canonical: https://infrony.com/como-un-diseno-web-profesional-aumenta-ventas
 ---
 
 En la era digital, tu sitio web es mucho más que una tarjeta de presentación; es un motor de ventas crucial para tu negocio. Un diseño web profesional no solo mejora la apariencia de tu sitio, sino que también puede aumentar significativamente tus ventas online. En este artículo, exploramos cómo un diseño web bien estructurado y optimizado puede impactar positivamente en tus conversiones y, en última instancia, en tus ingresos.
