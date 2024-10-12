@@ -15,6 +15,19 @@ metadata:
     default: 'Servitech Infrony'
     template: '%s — Soluciones Tecnológicas'
   description: '🚀 Soluciones Tecnológicas para Empresas, Desarrollo Web y Móvil, Integración de APIs, E-commerce, Diseño UX/UI y más. Tu aliado en la transformación digital.'
+  keyword:
+    [
+      'Soluciones Tecnológicas',
+      'Desarrollo Web',
+      'Transformación Digital',
+      'E-commerce',
+      'Diseño UX/UI',
+      'Automatización',
+      'Desarrollo web Panamá',
+      'Diseño web Panamá',
+      'software para atencion al cliente',
+      'software ecommerce',
+    ]
   robots:
     index: true
     follow: true
