@@ -136,8 +136,8 @@ export const footerData = {
       links: [
         { text: 'Blog', href: '/blog' },
         // { text: 'Casos de Éxito', href: '/casos-exito' },
-        { text: 'Tutoriales', href: '/tag/tutoriales' },
-        { text: 'Guías y Documentación', href: '/tag/docs' },
+        { text: 'Tutoriales', href: '/etiqueta/tutoriales' },
+        { text: 'Guías y Documentación', href: '/etiqueta/docs' },
       ],
     },
     {
