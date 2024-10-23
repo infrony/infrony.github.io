@@ -8,7 +8,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Servicios de Transformación Digital',
 };
 ---
 
@@ -40,11 +40,11 @@ const metadata = {
   <Hero
     tagline="Servicios Profesionales de Tecnología"
     title="Impulsa tu Negocio con Soluciones Tecnológicas a Medida"
-    subtitle="Desde la consultoría estratégica hasta el desarrollo de aplicaciones y la creación de contenido digital, ofrecemos servicios personalizados que optimizan tu presencia online y automatizan tus procesos. Nuestro objetivo es hacer crecer tu negocio con tecnología innovadora y soluciones adaptadas a tus necesidades."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Conoce nuestros servicios', href: '/services' }]}
+    subtitle="Ofrecemos servicios de consultoría estratégica, desarrollo de aplicaciones, y automatización inteligente, diseñados para optimizar tu negocio y mejorar la experiencia de tus clientes. ¡Transforma tu empresa hoy!"
+    actions={[{ variant: 'primary', target: '_blank', text: 'Descubre nuestros servicios', href: '/services' }]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      src: 'https://images.infrony.com/servicios-infrony.png',
+      alt: 'Hero Image of Business Transformation',
     }}
   />
 
@@ -52,43 +52,43 @@ const metadata = {
 
   <Features2
     title="Nuestros Servicios"
-    subtitle="Explora nuestros servicios diseñados para potenciar tu negocio."
+    subtitle="Explora nuestras soluciones diseñadas para hacer crecer tu negocio."
     columns={3}
     items={[
       {
         title: 'Consultoría Tecnológica y Estrategia Digital',
         description:
-          'Ayudamos a tu empresa a optimizar su funcionamiento mediante la tecnología, eliminando procesos manuales y mejorando la presencia online.',
+          'Te ayudamos a digitalizar y automatizar los procesos de tu empresa, mejorando la eficiencia y reduciendo costos operativos.',
         icon: 'tabler:brain',
       },
       {
-        title: 'Mantenimiento y Soporte de Sitios Web',
+        title: 'Automatización con IA',
         description:
-          'Mantén tu sitio web funcionando sin interrupciones y siempre actualizado sin que te preocupes por los detalles técnicos.',
+          'Automatizamos tareas empresariales utilizando inteligencia artificial con n8n y Make.com, permitiendo una gestión eficiente de procesos y datos.',
         icon: 'tabler:settings',
       },
       {
         title: 'Desarrollo de Aplicaciones Web y Móviles',
         description:
-          'Desarrollamos aplicaciones a medida que optimizan tus procesos de negocio y mejoran la interacción con tus clientes.',
+          'Creamos aplicaciones personalizadas para mejorar la interacción con tus clientes y optimizar los flujos de trabajo internos.',
         icon: 'tabler:device-mobile',
       },
       {
-        title: 'Integración de APIs y Automatización',
+        title: 'Integración de APIs',
         description:
-          'Automatizamos tus procesos y conectamos tus herramientas para que trabajen juntas sin esfuerzo adicional.',
+          'Conectamos tus sistemas para que trabajen juntos de manera fluida, mejorando la productividad de tu equipo.',
         icon: 'tabler:link',
       },
       {
         title: 'Diseño Gráfico y Branding',
         description:
-          'Crea una imagen profesional y coherente para tu marca, capturando la atención de tus clientes y destacándote de la competencia.',
+          'Diseñamos y desarrollamos la identidad visual de tu negocio para que destaque en el mercado y conecte con tu audiencia.',
         icon: 'tabler:palette',
       },
       {
-        title: 'Creación de Tiendas Online (E-commerce)',
+        title: 'E-commerce',
         description:
-          'Ponemos en marcha tu tienda online rápidamente, sin complicaciones técnicas, para que empieces a vender y generar ingresos sin demoras.',
+          'Implementamos tiendas online seguras y escalables con pasarelas de pago integradas, para que puedas vender sin complicaciones.',
         icon: 'tabler:shopping-cart',
       },
     ]}
@@ -102,25 +102,25 @@ const metadata = {
       {
         title: 'Soluciones Personalizadas',
         description:
-          'Nos adaptamos a tus necesidades específicas para ofrecer soluciones que realmente impulsen tu negocio.',
+          'Nos adaptamos a las necesidades específicas de tu empresa para implementar las mejores soluciones tecnológicas.',
         icon: 'tabler:wand',
       },
       {
-        title: 'Soporte y Mantenimiento',
+        title: 'Soporte Técnico',
         description:
-          'Mantenemos tus sistemas actualizados y funcionando de manera óptima con nuestro servicio de soporte continuo.',
+          'Ofrecemos soporte continuo y mantenimiento de sistemas para garantizar la eficiencia y seguridad de tu infraestructura tecnológica.',
         icon: 'tabler:lifebuoy',
       },
       {
-        title: 'Estrategias de Crecimiento',
+        title: 'Estrategias Digitales',
         description:
-          'Desarrollamos estrategias digitales efectivas que potencian tu presencia online y te ayudan a captar más clientes.',
+          'Desarrollamos estrategias efectivas para aumentar tu visibilidad en línea y captar más clientes potenciales.',
         icon: 'tabler:trending-up',
       },
     ]}
     image={{
-      src: 'https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/comprometidos-con-el-proyecto.jpg',
-      alt: 'Comprometidos con el Proyecto',
+      src: 'https://images.infrony.com/colaboracion-trabajo-equipo.png',
+      alt: 'Equipo desarrollando estrategias de crecimiento',
     }}
   >
     <Fragment slot="content">
@@ -134,30 +134,30 @@ const metadata = {
     title="Lo que dicen nuestros clientes"
     testimonials={[
       {
-        testimonial: `La consultoría tecnológica fue un cambio total para nuestro negocio. Implementaron soluciones que nos ahorraron tiempo y dinero, mejorando nuestra eficiencia.`,
+        testimonial: `Gracias a la automatización que implementaron, nuestro equipo ha ganado tiempo y eficiencia. El soporte fue excelente.`,
         name: 'Karla Martínez',
         job: 'Gerente de Operaciones',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Carlos Martínez Image',
+          src: 'https://images.infrony.com/mujer-profesional.png',
+          alt: 'Imagen testimonial de Karla Martínez',
         },
       },
       {
-        testimonial: `El desarrollo de nuestra app móvil superó nuestras expectativas. El equipo siempre estuvo disponible para resolver dudas y ajustar la aplicación según nuestras necesidades.`,
-        name: 'María Gómez',
+        testimonial: `La app que desarrollaron nos ha permitido mejorar la experiencia del cliente, y las ventas han aumentado significativamente.`,
+        name: 'Ana Perez',
         job: 'Dueña de Negocio',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'María Gómez Image',
+          src: 'https://images.infrony.com/ana-perez.jpg',
+          alt: 'Imagen testimonial de Ana Perez',
         },
       },
       {
-        testimonial: `Gracias a sus servicios de mantenimiento, mi sitio web siempre está actualizado y funcionando sin problemas, lo que me permite enfocarme en mi negocio.`,
-        name: 'Javier Rodríguez',
+        testimonial: `Con el mantenimiento web de Servitech Infrony, nuestro sitio siempre está actualizado y funcionando de manera óptima.`,
+        name: 'Carlos Gomez',
         job: 'Consultor Independiente',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Javier Rodríguez Image',
+          src: 'https://images.infrony.com/carlos-gomez.jpg',
+          alt: 'Imagen testimonial de Carlos Gomez',
         },
       },
     ]}
@@ -174,6 +174,6 @@ const metadata = {
       },
     ]}
     title="¿Listo para transformar tu negocio?"
-    subtitle="Permítenos ayudarte a llevar tu empresa al siguiente nivel con soluciones tecnológicas personalizadas."
+    subtitle="Ponte en contacto con nosotros para implementar soluciones tecnológicas que hagan crecer tu empresa."
   />
 </Layout>
