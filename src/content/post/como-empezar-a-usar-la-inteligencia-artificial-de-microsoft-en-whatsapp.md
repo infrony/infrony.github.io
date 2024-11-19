@@ -1,7 +1,6 @@
-```markdown
 ---
 publishDate: 2024-11-18T00:00:00Z
-author: Thomas Handley
+author: Rodney Guillen
 title: Cómo empezar a usar la inteligencia artificial de Microsoft en WhatsApp
 excerpt: Aprende a activar Copilot, la IA de Microsoft, en WhatsApp y cómo sacarle el máximo provecho. Configúrala y conoce sus limitaciones.
 image: https://es.gizmodo.com/app/uploads/2024/11/Copilot-Mircosoft.jpg
@@ -11,7 +10,7 @@ tags:
   - WhatsApp
   - Microsoft
 metadata:
-  canonical: https://es.gizmodo.com/como-empezar-a-usar-la-inteligencia-artificial-de-microsoft-en-whatsapp-2000135573
+  canonical: https://infrony.com/como-empezar-a-usar-la-inteligencia-artificial-de-microsoft-en-whatsapp
 ---
 
 # Cómo empezar a usar la inteligencia artificial de Microsoft en WhatsApp
@@ -64,4 +63,3 @@ Con Copilot, puedes facilitar tus búsquedas y enriquecer tus interacciones en W
 
 ### Consejo práctico
 **Dedica un tiempo específico cada semana para practicar con Copilot**. Así podrás familiarizarte con sus capacidades y explorar una variedad de temas que te interesen. ¡No dudes en preguntar y aprender!
-```
