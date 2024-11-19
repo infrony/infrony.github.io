@@ -40,15 +40,19 @@ Copilot permite a los usuarios:
 ## Pasos para activar Copilot en WhatsApp
 
 1. **Accede al sitio oficial**
+
    - Dirígete a la página oficial de Copilot y busca un código QR.
 
 2. **Escanea el código QR**
+
    - Usa la cámara de tu dispositivo para escanear el código. Esto abrirá un chat en WhatsApp donde podrás interactuar con Copilot.
 
 3. **Inicia la conversación**
+
    - Puedes hacer preguntas sobre diferentes temas o solicitar que genere imágenes.
 
    **Ejemplos de uso incluyen**:
+
    - Preguntar sobre noticias actuales.
    - Solicitar imágenes a partir de tus descripciones.
    - Pedir resúmenes de noticias.
