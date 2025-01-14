@@ -1,14 +1,17 @@
 import getReadingTime from 'reading-time';
 import { toString } from 'mdast-util-to-string';
 import { visit } from 'unist-util-visit';
-import type { MarkdownAstroData, RehypePlugin, RemarkPlugin } from '@astrojs/markdown-remark';
+import type { RehypePlugin, RemarkPlugin } from '@astrojs/markdown-remark';
 
 export const readingTimeRemarkPlugin: RemarkPlugin = () => {
   return function (tree, file) {
     const textOnPage = toString(tree);
     const readingTime = Math.ceil(getReadingTime(textOnPage).minutes);
 
-    (file.data.astro as MarkdownAstroData).frontmatter.readingTime = readingTime;
+    // Eliminado el uso de 'MarkdownAstroData' y usado 'file.data.astro.frontmatter'
+    if (file.data.astro && file.data.astro.frontmatter) {
+      file.data.astro.frontmatter.readingTime = readingTime;
+    }
   };
 };
 

@@ -14,9 +14,6 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 
 import { Icon } from 'astro-icon/components';
 
-// Comment the line below to disable View Transitions
-import { ViewTransitions } from 'astro:transitions';
-
 import type { MetaData as MetaDataType } from '~/types';
 
 export interface Props {
@@ -86,8 +83,6 @@ const { language, textDirection } = I18N;
       })(window, document, 'script', 'dataLayer', 'GTM-TZLKLV5Z');
     </script>
     <!-- End Google Tag Manager -->
-    <!-- Comment the line below to disable View Transitions -->
-    <ViewTransitions fallback="swap" />
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
