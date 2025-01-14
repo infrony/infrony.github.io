@@ -5,9 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-// import Features from '~/components/widgets/Features.astro';
 import Stats from '~/components/widgets/Stats.astro';
-// import Features3 from '~/components/widgets/Features3.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
@@ -56,12 +54,12 @@ const metadata = {
       alt: 'Automatización con IA',
     }}
   >
-    <Fragment slot="title"> **Automatización con IA y Desarrollo de Software Personalizado** </Fragment>
+    <Fragment slot="title"> Automatización con IA y Desarrollo de Software Personalizado </Fragment>
 
     <Fragment slot="subtitle">
       En <span class="font-semibold">Servitech Infrony</span>, potenciamos tu negocio con soluciones digitales
-      innovadoras. Desde **automatización inteligente con IA** hasta el **desarrollo de software a medida** para
-      optimizar tus procesos y resultados.
+      innovadoras. Desde automatización inteligente con IA hasta el desarrollo de software a medida para optimizar tus
+      procesos y resultados.
     </Fragment>
   </Hero>
 
@@ -89,6 +87,16 @@ const metadata = {
         title: 'Optimización de Procesos',
         description: 'Analizamos y mejoramos tus procesos empresariales con herramientas de IA.',
         icon: 'tabler:chart-infographic',
+      },
+      {
+        title: 'Automatización de Respuestas de Correos',
+        description: 'Implementamos sistemas de respuesta automática para optimizar tu comunicación con clientes.',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Extracción de Datos desde Documentos',
+        description: 'Utilizamos IA para extraer datos valiosos desde archivos PDF y documentos escaneados.',
+        icon: 'tabler:file-description',
       },
     ]}
   />
@@ -134,6 +142,11 @@ const metadata = {
         title: '¿El software se adapta a mi empresa?',
         description: 'Creamos soluciones a medida, totalmente adaptadas a las necesidades de tu empresa.',
       },
+      {
+        title: '¿Cuáles son los beneficios de la integración de APIs?',
+        description:
+          'La integración de APIs permite conectar todas tus herramientas digitales, facilitando la automatización de flujos de trabajo y mejorando la eficiencia operativa.',
+      },
     ]}
   />
 
@@ -151,8 +164,7 @@ const metadata = {
   >
     <Fragment slot="title">¿Listo para Transformar tu Negocio?</Fragment>
     <Fragment slot="subtitle">
-      Contáctanos y descubre cómo la **automatización con IA** puede ayudarte a ahorrar tiempo y aumentar la
-      productividad.
+      Contáctanos y descubre cómo la automatización con IA puede ayudarte a ahorrar tiempo y aumentar la productividad.
     </Fragment>
   </CallToAction>
 </Layout>
