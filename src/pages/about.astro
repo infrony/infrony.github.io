@@ -8,7 +8,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Nosotros',
+  title: 'Sobre Nosotros - Servitech Infrony',
 };
 ---
 
@@ -34,162 +34,162 @@ const metadata = {
       showToggleTheme
     />
   </Fragment>
-  <!-- Hero Widget ******************* -->
 
+  <!-- Hero Section ******************* -->
   <Hero
-    tagline="Sobre Nosotros"
+    tagline="Impulsando tu Transformación Digital"
     image={{
-      src: 'https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/creatividad-en-equipo.jpg',
-      alt: 'Equipo trabajando',
+      src: 'https://images.infrony.com/automated-process.jpg',
+      alt: 'Automatización con IA',
     }}
   >
     <Fragment slot="title">
       Innovamos para que tu <br />
-      <span class="text-accent dark:text-white highlight"> Negocio Crezca</span>
+      <span class="text-accent dark:text-white highlight"> Negocio Crezca con IA</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      En Servitech Infrony, combinamos tecnología y creatividad para ofrecer soluciones personalizadas que optimizan tus
-      procesos, mejoran tu presencia en línea y potencian tu negocio. Nuestro equipo está comprometido con brindarte las
-      herramientas que necesitas para tener éxito en la era digital.
+      En <span class="font-semibold">Servitech Infrony</span>, combinamos **Inteligencia Artificial** y tecnología de
+      vanguardia para crear soluciones que automatizan procesos, optimizan tu presencia digital y potencian tu negocio
+      con eficiencia y escalabilidad.
     </Fragment>
   </Hero>
 
-  <!-- Stats Widget ****************** -->
-
+  <!-- Stats Section ****************** -->
   <Stats
     title="Nuestros Números"
     stats={[
       { title: 'Años de Experiencia', amount: '10+' },
-      { title: 'Proyectos Completados', amount: '150+' },
-      { title: 'Clientes Satisfechos', amount: '120+' },
-      { title: 'Certificaciones', amount: '50+' },
+      { title: 'Procesos Automatizados', amount: '500+' },
+      { title: 'Clientes Satisfechos', amount: '150+' },
+      { title: 'Certificaciones en IA', amount: '30+' },
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
-
+  <!-- Features3 Section ****************** -->
   <Features3
-    title="Nuestros Servicios"
-    subtitle="Ofrecemos una amplia gama de servicios diseñados para cubrir todas tus necesidades tecnológicas y digitales."
+    title="¿Por qué Elegirnos?"
+    subtitle="Soluciones Inteligentes para un Mundo Digital"
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Consultoría Tecnológica y Estrategia Digital',
+        title: 'Automatización con IA',
         description:
-          'Optimiza tu empresa mediante la tecnología, mejorando procesos internos y aumentando la captación de clientes.',
-        icon: 'tabler:brain',
+          'Implementamos herramientas de IA como Make.com y n8n para eliminar tareas repetitivas y mejorar tu productividad.',
+        icon: 'tabler:settings-automation',
       },
       {
-        title: 'Mantenimiento y Soporte de Sitios Web',
-        description: 'Mantén tu sitio actualizado y en funcionamiento sin preocuparte por los aspectos técnicos.',
-        icon: 'tabler:settings',
+        title: 'Desarrollo de Software a Medida',
+        description:
+          'Creamos aplicaciones web y móviles personalizadas que se adaptan a las necesidades de tu negocio.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Desarrollo de Aplicaciones Web y Móviles',
+        title: 'Integración de APIs',
         description:
-          'Creamos aplicaciones personalizadas que mejoran la interacción con tus clientes y optimizan tus procesos.',
-        icon: 'tabler:device-mobile',
+          'Conectamos tus sistemas digitales para una gestión fluida de la información con flujos de trabajo automatizados.',
+        icon: 'tabler:arrows-join',
       },
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
-
+  <!-- Features3 Section ****************** -->
   <Features3
     columns={3}
     isAfterContent={true}
     items={[
       {
-        title: 'Integración de APIs y Automatización',
-        description: 'Automatizamos tus procesos y conectamos herramientas para mejorar la eficiencia operativa.',
-        icon: 'tabler:arrows-join',
+        title: 'Automatización de Correos con IA',
+        description:
+          'Configura respuestas automáticas y clasificación inteligente para gestionar tu comunicación sin esfuerzo.',
+        icon: 'tabler:mail',
       },
       {
-        title: 'Diseño Gráfico y Branding',
+        title: 'Extracción de Datos desde Documentos',
         description:
-          'Crea una imagen profesional y coherente que capture la atención de tus clientes y destaque tu marca.',
-        icon: 'tabler:palette',
+          'Extraemos información de documentos PDF y archivos escaneados usando inteligencia artificial avanzada.',
+        icon: 'tabler:file-description',
       },
       {
-        title: 'Creación de Tiendas Online (E-commerce)',
+        title: 'Consultoría en IA y Transformación Digital',
         description:
-          'Lanzamos tu tienda online rápidamente, para que puedas empezar a vender sin complicaciones técnicas.',
-        icon: 'tabler:shopping-cart',
+          'Evaluamos tu infraestructura digital y diseñamos una estrategia a medida para maximizar tus resultados con IA.',
+        icon: 'tabler:brain',
       },
     ]}
     image={{
-      src: 'https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/creatividad-en-tecnologia.jpg',
-      alt: 'Imagen de creatividad y tecnología',
+      src: 'https://images.infrony.com/consulting-team.jpg',
+      alt: 'Equipo de consultoría en IA',
     }}
   />
 
-  <!-- Steps2 Widget ****************** -->
+  <!-- Steps2 Section ****************** -->
+  <Steps2
+    title="Nuestra Metodología de Trabajo"
+    subtitle="Seguimos un proceso estructurado para garantizar resultados excepcionales."
+    items={[
+      {
+        title: 'Evaluación Inicial',
+        description: 'Analizamos tu negocio y detectamos las áreas con mayor potencial para la automatización con IA.',
+      },
+      {
+        title: 'Desarrollo e Implementación',
+        description:
+          'Creamos flujos de trabajo automatizados y personalizamos tus herramientas para maximizar la eficiencia.',
+      },
+      {
+        title: 'Optimización Continua',
+        description:
+          'Monitoreamos el rendimiento de tus procesos automatizados y ajustamos para mejorar los resultados.',
+      },
+    ]}
+  />
 
+  <!-- Steps2 Section ****************** -->
   <Steps2
     title="Nuestros Valores"
-    subtitle="Nos guiamos por principios que garantizan la satisfacción de nuestros clientes y el éxito de nuestros proyectos."
-    items={[
-      {
-        title: 'Enfoque en el Cliente',
-        description:
-          'Ponemos tus necesidades en primer lugar, desarrollando soluciones personalizadas que agregan valor real a tu negocio.',
-      },
-      {
-        title: 'Mejora Continua',
-        description: 'Nos mantenemos al día con las últimas tecnologías y tendencias para ofrecerte siempre lo mejor.',
-      },
-      {
-        title: 'Prácticas Éticas',
-        description:
-          'Trabajamos con integridad, asegurándonos de que todas nuestras soluciones sean responsables y sostenibles.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Nuestros Logros"
-    subtitle="Nuestro compromiso y dedicación nos han llevado a ser reconocidos en la industria tecnológica."
+    subtitle="Principios que guían nuestro éxito y el de nuestros clientes."
     isReversed={true}
     callToAction={{
-      text: 'Conoce más',
-      href: '/',
+      text: 'Conoce más sobre nuestra historia',
+      href: '/about',
     }}
     items={[
       {
-        title: 'Alcance Global',
-        description:
-          'Hemos trabajado con clientes en múltiples países, adaptándonos a diferentes mercados y necesidades.',
-        icon: 'tabler:globe',
+        title: 'Innovación Constante',
+        description: 'Adoptamos tecnologías emergentes y seguimos aprendiendo para mantenernos a la vanguardia.',
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Retroalimentación Positiva',
-        description: 'Nuestros clientes destacan la calidad y efectividad de nuestras soluciones en sus negocios.',
-        icon: 'tabler:message-star',
+        title: 'Enfoque en Resultados',
+        description: 'Cada solución que implementamos está diseñada para ofrecer un impacto medible y positivo.',
+        icon: 'tabler:chart-line',
       },
       {
-        title: 'Premios y Reconocimientos',
+        title: 'Transparencia y Ética',
         description:
-          'Somos reconocidos como expertos en el sector, gracias a nuestra dedicación e innovación constante.',
-        icon: 'tabler:award',
+          'Trabajamos con integridad, asegurando siempre la seguridad y privacidad de los datos de nuestros clientes.',
+        icon: 'tabler:shield-check',
       },
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
-
+  <!-- Features2 Section ****************** -->
   <Features2
-    title="Nuestra Ubicación"
-    tagline="Encuéntranos"
+    title="Nuestra Ubicación y Alcance"
+    tagline="Conectamos con Empresas a Nivel Global"
     columns={1}
     items={[
       {
         title: 'Panamá, Ciudad de Panamá',
         description:
-          'Ubicados en un lugar estratégico, ofrecemos servicios tanto a nivel nacional como internacional de manera remota. ¡Contáctanos!',
+          'Desde nuestra sede, ofrecemos soluciones tecnológicas a empresas de todo el mundo, proporcionando servicios tanto presenciales como remotos.',
+      },
+      {
+        title: 'Atención Global',
+        description:
+          'Contamos con clientes en distintos países, adaptando nuestras soluciones a múltiples mercados y necesidades.',
       },
     ]}
   />
