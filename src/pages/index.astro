@@ -5,16 +5,14 @@ import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Features from '~/components/widgets/Features.astro';
+// import Features from '~/components/widgets/Features.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+// import Features3 from '~/components/widgets/Features3.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
-// import { YouTube } from 'astro-embed';
-
 const metadata = {
-  title: 'Inicio - Servitech Infrony',
+  title: 'Automatización con IA y Desarrollo de Software - Servitech Infrony',
 };
 ---
 
@@ -40,301 +38,121 @@ const metadata = {
       showToggleTheme
     />
   </Fragment>
-  <!-- Hero Widget ******************* -->
 
+  <!-- Hero Section ******************* -->
   <Hero
-    tagline="Impulsa tu Negocio con Soluciones Digitales"
+    tagline="Transforma tu Negocio con IA y Desarrollo a la Medida"
     actions={[
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Contáctanos por WhatsApp',
+        text: 'Solicita tu Consultoría',
         href: 'https://wa.me/message/NQ2M2DC3AEDZD1',
         icon: 'tabler:brand-whatsapp',
       },
     ]}
     image={{
-      src: 'https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/team-work-office.jpg',
-      alt: 'Soluciones a la medida',
+      src: 'https://images.infrony.com/creatividad-en-equipo.jpg',
+      alt: 'Automatización con IA',
     }}
   >
-    <Fragment slot="title">
-      Soluciones <span class="text-accent dark:text-white highlight">Tecnológicas</span> a la medida de tu negocio
-    </Fragment>
+    <Fragment slot="title"> **Automatización con IA y Desarrollo de Software Personalizado** </Fragment>
 
     <Fragment slot="subtitle">
-      En <span class="font-semibold">Servitech Infrony</span>, combinamos tecnología, creatividad y experiencia para
-      transformar tus procesos digitales. Ofrecemos servicios de desarrollo de software, consultoría tecnológica, diseño
-      web y mucho más, enfocados en potenciar tu presencia online y optimizar la experiencia de tus clientes.
+      En <span class="font-semibold">Servitech Infrony</span>, potenciamos tu negocio con soluciones digitales
+      innovadoras. Desde **automatización inteligente con IA** hasta el **desarrollo de software a medida** para
+      optimizar tus procesos y resultados.
     </Fragment>
-
-    <!-- <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Introducción a nuestros servicios tecnológicos" />
-      <style is:inline>
-        lite-youtube {
-          margin: 0 auto;
-          max-width: 100%;
-        }
-      </style>
-    </Fragment> -->
   </Hero>
 
-  <!-- Features2 Widget ************** -->
-
+  <!-- Features Section ******************* -->
   <Features2
-    title="Sobre Nosotros"
-    subtitle="En Servitech Infrony, creemos en la magia de convertir ideas en soluciones digitales impactantes. Fundados por desarrolladores apasionados, nuestro objetivo es simplificar el proceso de transformación digital para empresas de todos los tamaños, ofreciendo soluciones a medida que impulsan la eficiencia y el crecimiento."
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title="Nuestra Trayectoria"
-    subtitle="Los siguientes números reflejan la confianza de nuestros clientes y los resultados que hemos ayudado a alcanzar."
-    stats={[
-      { title: 'Proyectos Completados', amount: '150+' },
-      { title: 'Clientes Satisfechos', amount: '120+' },
-      { title: 'Años de Experiencia', amount: '10+' },
-      { title: 'Certificaciones', amount: '20+' },
-    ]}
-  />
-
-  <!-- Brands Widget ****************** -->
-
-  <Brands
-    title="Colaboraciones y Alianzas"
-    subtitle="En Servitech Infrony, creemos en el poder de la colaboración para impulsar la innovación y crear experiencias excepcionales."
-    icons={[]}
-    images={[
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Sutiecrm_logo_x2.png',
-        alt: 'SuiteCRM',
-      },
-      {
-        src: 'https://s.w.org/style/images/about/WordPress-logotype-standard.png',
-        alt: 'WordPress',
-      },
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg',
-        alt: 'Vercel',
-      },
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg',
-        alt: 'Cloudflare',
-      },
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg',
-        alt: 'Laravel',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
-        alt: 'Node JS',
-      },
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg',
-        alt: 'OpenAI',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
-        alt: 'Meta',
-      },
-      {
-        src: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
-        alt: 'Github',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Nuestros Servicios"
-    subtitle="Ofrecemos una gama completa de servicios tecnológicos diseñados para ayudar a tu empresa a crecer y adaptarse al entorno digital."
+    title="¿Por qué elegirnos para Automatizar tu Negocio?"
+    subtitle="Nuestras soluciones de automatización están diseñadas para empresas de todos los tamaños. Hacemos que la IA trabaje para ti, simplificando tareas repetitivas y ahorrando tiempo valioso."
     items={[
       {
-        title: 'Consultoría Tecnológica',
-        description:
-          'Te ayudamos a identificar y adoptar las mejores soluciones tecnológicas para tu negocio, mejorando la eficiencia y reduciendo costos operativos.',
-        icon: 'tabler:brain',
+        title: 'Automatización de Tareas Repetitivas',
+        description: 'Elimina las tareas manuales con flujos de trabajo automatizados usando IA.',
+        icon: 'tabler:settings-automation',
       },
       {
-        title: 'Desarrollo de Aplicaciones',
-        description:
-          'Creamos aplicaciones web y móviles personalizadas que optimizan tus procesos y mejoran la interacción con tus clientes.',
-        icon: 'tabler:device-mobile',
-      },
-      {
-        title: 'Diseño Gráfico y Branding',
-        description:
-          'Desarrolla una identidad visual coherente y profesional que capture la atención de tus clientes y fortalezca tu marca.',
-        icon: 'tabler:palette',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- Features Widget *************** -->
-
-  <Features
-    id="features"
-    title="Beneficios de Trabajar con Nosotros"
-    subtitle="Nuestras soluciones están diseñadas para ofrecer resultados tangibles y mejorar la experiencia de tus clientes."
-    columns={3}
-    items={[
-      {
-        title: 'Soluciones Personalizadas',
-        description:
-          'Nos adaptamos a las necesidades específicas de tu negocio, ofreciendo servicios que se alinean con tus objetivos.',
-        icon: 'tabler:adjustments-horizontal',
-      },
-      {
-        title: 'Diseño Responsivo',
-        description: 'Nuestras soluciones están optimizadas para funcionar perfectamente en cualquier dispositivo.',
-        icon: 'tabler:picture-in-picture',
-      },
-      {
-        title: 'Soporte Técnico',
-        description:
-          'Ofrecemos soporte continuo para asegurar que tus soluciones funcionen de manera óptima en todo momento.',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Integración de APIs',
-        description:
-          'Automatizamos y conectamos tus sistemas, mejorando la eficiencia operativa y reduciendo la intervención manual.',
+        title: 'Integración de APIs Inteligentes',
+        description: 'Conectamos tus herramientas favoritas para un flujo de datos eficiente.',
         icon: 'tabler:arrows-join',
       },
       {
-        title: 'Optimización SEO',
-        description:
-          'Mejoramos la visibilidad de tu sitio web en los motores de búsqueda, atrayendo más tráfico y clientes potenciales.',
-        icon: 'tabler:arrows-right-left',
+        title: 'Desarrollo de Software a la Medida',
+        description: 'Creamos soluciones personalizadas que se ajustan a tus necesidades específicas.',
+        icon: 'tabler:code',
       },
       {
-        title: 'Desarrollo Ágil',
-        description: 'Trabajamos con metodologías ágiles que permiten una entrega rápida y eficiente de tus proyectos.',
-        icon: 'tabler:rocket',
+        title: 'Optimización de Procesos',
+        description: 'Analizamos y mejoramos tus procesos empresariales con herramientas de IA.',
+        icon: 'tabler:chart-infographic',
       },
     ]}
   />
 
-  <!-- FAQs Widget ******************* -->
+  <!-- Stats Section ******************* -->
+  <Stats
+    title="Resultados que Hablan por Sí Mismos"
+    subtitle="Nuestros clientes ya han visto la diferencia con nuestras soluciones tecnológicas."
+    stats={[
+      { title: 'Procesos Automatizados', amount: '25+' },
+      { title: 'Horas Ahorradas', amount: '1,000+' },
+      { title: 'Clientes Felices', amount: '50+' },
+      { title: 'Años de Experiencia', amount: '10+' },
+    ]}
+  />
 
+  <!-- Brands Section ******************* -->
+  <Brands
+    title="Herramientas y Socios Tecnológicos"
+    subtitle="Trabajamos con las mejores herramientas para garantizar resultados excepcionales."
+    images={[
+      { src: 'https://logosandtypes.com/wp-content/uploads/2022/04/make.svg', alt: 'Make.com' },
+      { src: 'https://commons.wikimedia.org/wiki/File:N8n-logo-new.svg', alt: 'n8n' },
+      { src: 'https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg', alt: 'Node.js' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg', alt: 'OpenAI' },
+    ]}
+  />
+
+  <!-- FAQs Section ******************* -->
   <FAQs
     title="Preguntas Frecuentes"
     items={[
       {
-        title: '¿Qué servicios ofrecen?',
+        title: '¿Cómo funciona la automatización con IA?',
         description:
-          'Ofrecemos consultoría tecnológica, desarrollo de aplicaciones, diseño gráfico y branding, integración de APIs, y soluciones de hosting, entre otros.',
+          'Usamos IA para automatizar tareas repetitivas como gestión de correos, extracción de datos y generación de reportes.',
       },
       {
-        title: '¿Cómo puedo contactar al soporte técnico?',
-        description:
-          'Puedes contactarnos a través de nuestro formulario de contacto, por teléfono / WhatsApp +507 65772083, o por email a hola@infrony.com.',
+        title: '¿Ofrecen demostraciones personalizadas?',
+        description: 'Sí, podemos agendar una llamada para mostrar cómo funciona la automatización en tu negocio.',
       },
       {
-        title: '¿Ofrecen servicios de mantenimiento?',
-        description:
-          'Sí, ofrecemos planes de mantenimiento y soporte técnico para asegurar que tu sitio web o aplicación funcione sin problemas.',
-      },
-      {
-        title: '¿Trabajan con empresas de todos los tamaños?',
-        description:
-          'Sí, trabajamos con pequeñas, medianas y grandes empresas, adaptando nuestras soluciones a las necesidades específicas de cada cliente.',
-      },
-      {
-        title: '¿Cómo garantizan la seguridad de mis datos?',
-        description:
-          'Todas nuestras conexiones son seguras y cifradas, y no almacenamos datos personales en bases de datos. Además, utilizamos protocolos de seguridad avanzados para proteger tu información.',
-      },
-      {
-        title: '¿Puedo solicitar un servicio personalizado?',
-        description:
-          'Claro, nos especializamos en ofrecer soluciones a medida para cada cliente. Contáctanos para discutir tus necesidades específicas.',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </FAQs>
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="¿Cómo podemos ayudarte?"
-    subtitle="Estamos aquí para ayudarte y responder cualquier pregunta que puedas tener."
-    columns={4}
-    items={[
-      {
-        title: 'Teléfono / WhatsApp',
-        icon: 'tabler:phone',
-        callToAction: {
-          target: '_blank',
-          text: 'Llámanos o envíanos un mensaje',
-          href: 'tel:+50765772083',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Email',
-        icon: 'tabler:mail',
-        callToAction: {
-          target: '_blank',
-          text: 'Escríbenos',
-          href: 'mailto:hola@infrony.com',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Chat con ventas',
-        icon: 'tabler:message-circle',
-        callToAction: {
-          target: '_blank',
-          text: 'Inicia chat',
-          href: '/contact',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Chat con soporte',
-        icon: 'tabler:message-circle',
-        callToAction: {
-          target: '_blank',
-          text: 'Inicia chat',
-          href: '/contact',
-          variant: 'link',
-        },
+        title: '¿El software se adapta a mi empresa?',
+        description: 'Creamos soluciones a medida, totalmente adaptadas a las necesidades de tu empresa.',
       },
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
-
+  <!-- Call To Action Section ********** -->
   <CallToAction
     actions={[
       {
         variant: 'primary',
         target: '_blank',
-        text: 'Contáctanos',
-        href: '/contact',
-        icon: 'tabler:message-circle',
+        text: 'Habla con un Experto',
+        href: 'https://wa.me/message/NQ2M2DC3AEDZD1',
+        icon: 'tabler:brand-whatsapp',
       },
     ]}
   >
-    <Fragment slot="title">Sé parte de nuestra visión</Fragment>
-
+    <Fragment slot="title">¿Listo para Transformar tu Negocio?</Fragment>
     <Fragment slot="subtitle">
-      Descubre un entorno de trabajo dinámico, oportunidades de crecimiento inigualables y la posibilidad de tener un
-      impacto significativo.
+      Contáctanos y descubre cómo la **automatización con IA** puede ayudarte a ahorrar tiempo y aumentar la
+      productividad.
     </Fragment>
   </CallToAction>
 </Layout>
