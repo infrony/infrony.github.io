@@ -84,5 +84,6 @@ pages_build_output_dir = "./dist"
 # binding = "MY_KV_NAMESPACE"
 # id = "<PRODUCTION_NAMESPACE_ID>"
 [[routes]]
-pattern = "*"
-serve = "/index.html"
+pattern = "/*"
+custom_domain = false
+zone_name = "infrony.com"
