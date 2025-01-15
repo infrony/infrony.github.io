@@ -8,7 +8,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Servicios de Transformación Digital',
+  title: 'Servicios de Transformación Digital y Automatización con IA',
 };
 ---
 
@@ -35,145 +35,147 @@ const metadata = {
     />
   </Fragment>
 
-  <!-- Hero Widget ******************* -->
+  <!-- Hero Section ******************* -->
 
   <Hero
-    tagline="Servicios Profesionales de Tecnología"
-    title="Impulsa tu Negocio con Soluciones Tecnológicas a Medida"
-    subtitle="Ofrecemos servicios de consultoría estratégica, desarrollo de aplicaciones, y automatización inteligente, diseñados para optimizar tu negocio y mejorar la experiencia de tus clientes. ¡Transforma tu empresa hoy!"
-    actions={[{ variant: 'primary', target: '_blank', text: 'Descubre nuestros servicios', href: '/services' }]}
+    tagline="Impulsa tu Negocio con IA y Desarrollo Personalizado"
+    title="Automatización Inteligente y Soluciones a la Medida"
+    subtitle="Simplifica tus procesos empresariales con soluciones de inteligencia artificial y software desarrollado para adaptarse a las necesidades específicas de tu negocio."
+    actions={[{ variant: 'primary', target: '_blank', text: 'Explora Nuestros Servicios', href: '/services' }]}
     image={{
       src: 'https://images.infrony.com/servicios-infrony.png',
-      alt: 'Hero Image of Business Transformation',
+      alt: 'Automatización Empresarial con IA',
     }}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Features Section ******************* -->
 
   <Features2
-    title="Nuestros Servicios"
-    subtitle="Explora nuestras soluciones diseñadas para hacer crecer tu negocio."
+    title="Nuestros Servicios Destacados"
+    subtitle="Explora nuestras soluciones tecnológicas diseñadas para transformar tu empresa."
     columns={3}
     items={[
       {
-        title: 'Consultoría Tecnológica y Estrategia Digital',
+        title: 'Automatización con IA',
         description:
-          'Te ayudamos a digitalizar y automatizar los procesos de tu empresa, mejorando la eficiencia y reduciendo costos operativos.',
+          'Automatizamos tus flujos de trabajo con herramientas como n8n y Make.com para eliminar tareas repetitivas y mejorar la productividad.',
+        icon: 'tabler:settings-automation',
+      },
+      {
+        title: 'Consultoría en Transformación Digital',
+        description:
+          'Te guiamos para implementar la tecnología adecuada, optimizando tus procesos y reduciendo costos operativos.',
         icon: 'tabler:brain',
       },
       {
-        title: 'Automatización con IA',
+        title: 'Desarrollo de Software a la Medida',
         description:
-          'Automatizamos tareas empresariales utilizando inteligencia artificial con n8n y Make.com, permitiendo una gestión eficiente de procesos y datos.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Desarrollo de Aplicaciones Web y Móviles',
-        description:
-          'Creamos aplicaciones personalizadas para mejorar la interacción con tus clientes y optimizar los flujos de trabajo internos.',
+          'Creamos aplicaciones web y móviles personalizadas que se adaptan a las necesidades específicas de tu negocio.',
         icon: 'tabler:device-mobile',
       },
       {
-        title: 'Integración de APIs',
+        title: 'Integración de APIs y Conectividad',
         description:
-          'Conectamos tus sistemas para que trabajen juntos de manera fluida, mejorando la productividad de tu equipo.',
+          'Conectamos tus herramientas y plataformas para un flujo de datos fluido y centralizado entre tus sistemas.',
         icon: 'tabler:link',
       },
       {
-        title: 'Diseño Gráfico y Branding',
+        title: 'Automatización de Correos y Gestión de Datos',
         description:
-          'Diseñamos y desarrollamos la identidad visual de tu negocio para que destaque en el mercado y conecte con tu audiencia.',
-        icon: 'tabler:palette',
+          'Implementamos sistemas de respuestas automáticas y gestión de datos para una comunicación más eficiente.',
+        icon: 'tabler:mail',
       },
       {
-        title: 'E-commerce',
+        title: 'E-commerce y Tiendas Online',
         description:
-          'Implementamos tiendas online seguras y escalables con pasarelas de pago integradas, para que puedas vender sin complicaciones.',
+          'Implementamos soluciones de comercio electrónico seguras y escalables con pasarelas de pago integradas.',
         icon: 'tabler:shopping-cart',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- Content Section **************** -->
 
   <Content
     isReversed
     items={[
       {
-        title: 'Soluciones Personalizadas',
+        title: 'Soluciones 100% Personalizadas',
         description:
-          'Nos adaptamos a las necesidades específicas de tu empresa para implementar las mejores soluciones tecnológicas.',
+          'Adaptamos nuestras soluciones de IA y software a tus necesidades específicas, garantizando una transformación digital efectiva.',
         icon: 'tabler:wand',
       },
       {
-        title: 'Soporte Técnico',
+        title: 'Soporte y Mantenimiento Continuo',
         description:
-          'Ofrecemos soporte continuo y mantenimiento de sistemas para garantizar la eficiencia y seguridad de tu infraestructura tecnológica.',
+          'Brindamos soporte técnico proactivo para asegurar la operatividad continua de tus soluciones digitales.',
         icon: 'tabler:lifebuoy',
       },
       {
-        title: 'Estrategias Digitales',
+        title: 'Estrategias Digitales con Impacto',
         description:
-          'Desarrollamos estrategias efectivas para aumentar tu visibilidad en línea y captar más clientes potenciales.',
+          'Desarrollamos estrategias de automatización y presencia digital que generan resultados tangibles en tu empresa.',
         icon: 'tabler:trending-up',
       },
     ]}
     image={{
       src: 'https://images.infrony.com/colaboracion-trabajo-equipo.png',
-      alt: 'Equipo desarrollando estrategias de crecimiento',
+      alt: 'Consultoría en Transformación Digital',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nuestros Compromisos</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Nuestro Compromiso con tu Éxito
+      </h3>
     </Fragment>
   </Content>
 
-  <!-- Testimonials Widget *********** -->
+  <!-- Testimonials Section *********** -->
 
   <Testimonials
-    title="Lo que dicen nuestros clientes"
+    title="Lo que Dicen Nuestros Clientes"
     testimonials={[
       {
-        testimonial: `Gracias a la automatización que implementaron, nuestro equipo ha ganado tiempo y eficiencia. El soporte fue excelente.`,
-        name: 'Karla Martínez',
-        job: 'Gerente de Operaciones',
+        testimonial: `Gracias a la automatización con IA que implementaron, ahora gestionamos nuestra base de clientes con mayor rapidez y eficiencia.`,
+        name: 'Carlos Pérez',
+        job: 'Director de Ventas',
         image: {
           src: 'https://images.infrony.com/mujer-profesional.png',
-          alt: 'Imagen testimonial de Karla Martínez',
+          alt: 'Carlos Pérez Testimonio',
         },
       },
       {
-        testimonial: `La app que desarrollaron nos ha permitido mejorar la experiencia del cliente, y las ventas han aumentado significativamente.`,
-        name: 'Ana Perez',
-        job: 'Dueña de Negocio',
+        testimonial: `El software a medida que desarrollaron para nuestro negocio ha mejorado la experiencia del cliente de manera excepcional.`,
+        name: 'María Rodríguez',
+        job: 'CEO - Startup Digital',
         image: {
           src: 'https://images.infrony.com/ana-perez.jpg',
-          alt: 'Imagen testimonial de Ana Perez',
+          alt: 'María Rodríguez Testimonio',
         },
       },
       {
-        testimonial: `Con el mantenimiento web de Servitech Infrony, nuestro sitio siempre está actualizado y funcionando de manera óptima.`,
-        name: 'Carlos Gomez',
+        testimonial: `El soporte técnico ha sido impecable. Gracias a Servitech Infrony, nuestra web siempre está actualizada y funcionando a la perfección.`,
+        name: 'José Gómez',
         job: 'Consultor Independiente',
         image: {
           src: 'https://images.infrony.com/carlos-gomez.jpg',
-          alt: 'Imagen testimonial de Carlos Gomez',
+          alt: 'José Gómez Testimonio',
         },
       },
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
+  <!-- CallToAction Section *********** -->
 
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Contáctanos',
+        text: 'Habla con un Experto',
         href: '/contact',
       },
     ]}
-    title="¿Listo para transformar tu negocio?"
-    subtitle="Ponte en contacto con nosotros para implementar soluciones tecnológicas que hagan crecer tu empresa."
+    title="¿Listo para Automatizar tu Negocio con IA?"
+    subtitle="Contáctanos hoy y descubre cómo transformar tu negocio con automatización inteligente y soluciones digitales personalizadas."
   />
 </Layout>
