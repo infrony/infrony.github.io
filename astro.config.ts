@@ -26,6 +26,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
   output: 'static',
   site: 'https://infrony.com',
+  base: '/',
   integrations: [
     tailwind({
       applyBaseStyles: false,
