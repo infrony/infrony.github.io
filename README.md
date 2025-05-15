@@ -1,54 +1,41 @@
-# 🚀 AstroWind
+# 🚀 Servitech Infrony - Sitio Web Corporativo
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+     alt="Servitech Infrony Lighthouse Score" width="100" height="358">
 
-🌟 _Most *starred* & *forked* Astro theme in 2022 & 2023_. 🌟
+**Servitech Infrony** es un sitio web corporativo desarrollado con **[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**, enfocado en presentar servicios de automatización con IA y desarrollo de software personalizado.
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
-
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- ✅ Puntuaciones **optimizadas para SEO** en **PageSpeed Insights**.
+- ✅ Integración con **Tailwind CSS** con soporte para **Modo Oscuro** y **_RTL_**.
+- ✅ **Blog rápido y optimizado para SEO** con feed RSS automático, soporte para MDX, categorías y etiquetas personalizadas en español.
+- ✅ **Optimización de imágenes** (usando Astro Assets y Unpic para CDN de imágenes universal).
+- ✅ Generación de **sitemap del proyecto** basado en rutas.
+- ✅ **Metaetiquetas Open Graph** para compartir en redes sociales.
+- ✅ **Analytics** integrado con Google Analytics.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astrowind-1.png" alt="AstroWind Theme Screenshot">
-
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+<img src="https://images.infrony.com/creatividad-en-equipo.jpg" alt="Servitech Infrony Screenshot">
 
 <br>
 
 <details open>
-<summary>Table of Contents</summary>
+<summary>Tabla de Contenidos</summary>
 
-- [🚀 AstroWind](#-astrowind)
+- [🚀 Servitech Infrony - Sitio Web Corporativo](#-servitech-infrony---sitio-web-corporativo)
   - [Demo](#demo)
-  - [🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-  - [Getting started](#getting-started)
-    - [Project structure](#project-structure)
-    - [Commands](#commands)
-    - [Configuration](#configuration)
-      - [Customize Design](#customize-design)
-    - [Deploy](#deploy)
-      - [Deploy to production (manual)](#deploy-to-production-manual)
-      - [Deploy to Netlify](#deploy-to-netlify)
-      - [Deploy to Vercel](#deploy-to-vercel)
-  - [Frequently Asked Questions](#frequently-asked-questions)
-  - [Related projects](#related-projects)
-  - [Contributing](#contributing)
-  - [Acknowledgements](#acknowledgements)
-  - [License](#license)
+  - [Servicios Destacados](#servicios-destacados)
+  - [Primeros pasos](#primeros-pasos)
+    - [Estructura del proyecto](#estructura-del-proyecto)
+    - [Comandos](#comandos)
+    - [Configuración](#configuración)
+      - [Personalización de diseño](#personalización-de-diseño)
+    - [Despliegue](#despliegue)
+      - [Despliegue a producción (manual)](#despliegue-a-producción-manual)
+      - [Despliegue a Netlify](#despliegue-a-netlify)
+      - [Despliegue a Vercel](#despliegue-a-vercel)
+  - [Contribuciones](#contribuciones)
+  - [Licencia](#licencia)
 
 </details>
 
@@ -56,29 +43,28 @@
 
 ## Demo
 
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
+📌 [https://infrony.com/](https://infrony.com/)
 
 <br>
 
-## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
+## Servicios Destacados
 
-We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
-
-[Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
+- **Automatización con IA**: Implementación de flujos de trabajo automatizados con herramientas como Make.com y n8n.
+- **Desarrollo de Software a Medida**: Creación de aplicaciones web y móviles personalizadas.
+- **Integración de APIs**: Conexión de herramientas y plataformas para un flujo de datos centralizado.
+- **Consultoría en Transformación Digital**: Asesoramiento para implementar tecnología adecuada y optimizar procesos.
+- **Automatización de Correos y Gestión de Datos**: Sistemas de respuestas automáticas y procesamiento eficiente.
+- **E-commerce y Tiendas Online**: Soluciones de comercio electrónico con pasarelas de pago integradas.
 
 <br>
 
-## Getting started
+## Primeros pasos
 
-**AstroWind** tries to give you quick access to creating a website using [Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
+**Servitech Infrony** es un sitio web moderno desarrollado con Astro y Tailwind CSS, focalizado en servicios de automatización con IA y transformación digital.
 
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
+### Estructura del proyecto
 
-In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
-
-### Project structure
-
-Inside **AstroWind** template, you'll see the following folders and files:
+La estructura de archivos y directorios del proyecto Servitech Infrony:
 
 ```
 /
@@ -103,8 +89,8 @@ Inside **AstroWind** template, you'll see the following folders and files:
 │   │   └── Logo.astro
 │   ├── content/
 │   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
+│   │   │   ├── errores-comunes-desarrollo-software.md
+│   │   │   ├── integracion-apis-negocio.md
 │   │   │   └── ...
 │   │   └-- config.ts
 │   ├── layouts/
@@ -113,8 +99,8 @@ Inside **AstroWind** template, you'll see the following folders and files:
 │   │   └── PageLayout.astro
 │   ├── pages/
 │   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
+│   │   │   ├── [categoria]/
+│   │   │   ├── [etiqueta]/
 │   │   │   ├── [...page].astro
 │   │   │   └── index.astro
 │   │   ├── index.astro
@@ -123,178 +109,93 @@ Inside **AstroWind** template, you'll see the following folders and files:
 │   │   └── ...
 │   ├── utils/
 │   ├── config.yaml
-│   └── navigation.js
+│   └── navigation.ts
 ├── package.json
 ├── astro.config.ts
 └── ...
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Comandos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
-
-<br>
-
-### Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command               | Action                                             |
+| Comando               | Acción                                             |
 | :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:3000`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
+| `npm install`         | Instala dependencias                               |
+| `npm run dev`         | Inicia servidor local en `localhost:3000`          |
+| `npm run build`       | Construye el sitio para producción en `./dist/`    |
+| `npm run preview`     | Previsualiza la build localmente antes de desplegar|
+| `npm run format`      | Formatea código con Prettier                       |
+| `npm run lint:eslint` | Ejecuta Eslint                                     |
+| `npm run astro ...`   | Ejecuta comandos CLI como `astro add`, `astro preview` |
 
 <br>
 
-### Configuration
+### Configuración
 
-Basic configuration file: `./src/config.yaml`
+Archivo de configuración básica: `./src/config.yaml`
 
 ```yaml
 site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false # Generate permalinks with or without "/" at the end
+  name: 'Servitech Infrony'
+  site: 'https://infrony.com'
+  base: '/'
+  trailingSlash: false
+  googleSiteVerificationId: 'n1vhO1_mfclQhh86YaOYe50X7hPcClVpxtaisVVbmgk'
 
-  googleSiteVerificationId: false # Or some value,
-
-# Default SEO metadata
+# Configuración SEO predeterminada
 metadata:
   title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
-  robots:
-    index: true
-    follow: true
-  openGraph:
-    site_name: 'Example'
-    images:
-      - url: '~/assets/images/default.jpg'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
-    cardType: summary_large_image
-
+    default: 'Servitech Infrony'
+    template: '%s — Soluciones Tecnológicas'
+  description: '🚀 Soluciones Tecnológicas para Empresas, Desarrollo Web y Móvil, Integración de APIs, E-commerce, Diseño UX/UI y más. Tu aliado en la transformación digital.'
+  
+# Configuración i18n
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
-apps:
-  blog:
-    isEnabled: true # If the blog will be enabled
-    postsPerPage: 6 # Number of posts per page
-
-    post:
-      isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true # If a widget with related posts is to be displayed below each post
-    relatedPostsCount: 4 # Number of related posts to display
-
-analytics:
-  vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
-
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+# ... más configuraciones disponibles
 ```
 
-<br>
+#### Personalización de diseño
 
-#### Customize Design
-
-To customize Font families, Colors or more Elements refer to the following files:
+Para personalizar familias de fuentes, colores u otros elementos, consulte los siguientes archivos:
 
 - `src/components/CustomStyles.astro`
 - `src/assets/styles/tailwind.css`
 
-### Deploy
+### Despliegue
 
-#### Deploy to production (manual)
+#### Despliegue a producción (manual)
 
-You can create an optimized production build with:
+Puedes crear una build optimizada con:
 
 ```shell
 npm run build
 ```
 
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
+Todos los archivos generados se encuentran en la carpeta `dist`, que puedes desplegar en cualquier servicio de hosting.
 
-#### Deploy to Netlify
+#### Despliegue a Netlify
 
-Clone this repository on your own GitHub account and deploy it to Netlify:
+Clona este repositorio en tu cuenta de GitHub y despliégalo en Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/infrony/infrony.github.io)
 
-#### Deploy to Vercel
+#### Despliegue a Vercel
 
-Clone this repository on your own GitHub account and deploy to Vercel:
+Clona este repositorio en tu cuenta de GitHub y despliégalo en Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Finfrony%2Finfrony.github.io)
 
 <br>
 
-## Frequently Asked Questions
+## Contribuciones
 
-- Why?
--
--
+Si tienes ideas, sugerencias o encuentras algún error, no dudes en abrir un issue o crear un pull request.
+Eso sería muy útil para todos nosotros y estaríamos encantados de recibir tu ayuda.
 
-<br>
+## Licencia
 
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
-## Contributing
-
-If you have any ideas, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
-## License
-
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+**Servitech Infrony** está licenciado bajo la licencia MIT — consulta el archivo [LICENSE](./LICENSE.md) para más detalles.
