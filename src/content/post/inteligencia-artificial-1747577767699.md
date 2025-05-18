@@ -1,7 +1,7 @@
 ---
 publishDate: 2025-05-18
 title: "La mejor manera de perder el miedo a la inteligencia artificial es probar y equivocarse"
-author: "Infobae"
+author: "infrony"
 excerpt: "El artículo explora cómo los docentes pueden enfrentar y experimentar con la inteligencia artificial para facilitar su integración educativa."
 image: https://images.pexels.com/photos/30530421/pexels-photo-30530421.jpeg
 category: Educación
