@@ -3,7 +3,7 @@ publishDate: 2025-06-06
 title: "Google lanza 15.000 becas gratis para cursos de inteligencia artificial y habilidades digitales"
 author: "infrony"
 excerpt: "Google ha decidido ofrecer 15,000 becas para capacitar a la población en inteligencia artificial y habilidades digitales, una respuesta ante la creciente demanda en el sector tecnológico."
-image: https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg
+image: https://images.infrony.com/google-lanza-1500-becas.jpg
 category: Tecnología
 tags:
   - inteligencia artificial
