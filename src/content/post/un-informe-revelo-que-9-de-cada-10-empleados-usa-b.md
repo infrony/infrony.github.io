@@ -3,7 +3,7 @@ publishDate: 2025-05-31
 title: "Un informe reveló que 9 de cada 10 empleados usa inteligencia artificial en su trabajo"
 author: "infrony"
 excerpt: "Un nuevo informe destaca cómo 9 de cada 10 empleados emplean inteligencia artificial en diversas tareas laborales, transformando la forma de trabajo."
-image: https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg
+image: https://images.infrony.com/leverage-AI-use-workplace-m.webp
 category: Tecnología
 tags:
   - inteligencia artificial
