@@ -1,0 +1,15 @@
+npm warn Unknown project config "shamefully-hoist". This will stop working in the next major version of npm.
+
+> infrony-github-io@1.0.0-beta.46 check:astro
+> astro check
+
+[31m[LegacyContentConfigError][39m Found legacy content config file in "src\content\config.ts". Please move this file to "src/content.config.ts" and ensure each collection has a loader defined.
+  [1mHint:[22m
+[33m    See [4mhttps://docs.astro.build/en/guides/upgrade-to/v6/#removed-legacy-content-collections[24m for more information on updating collections.[39m
+  [1mError reference:[22m
+    [36m[4mhttps://docs.astro.build/en/reference/errors/legacy-content-config-error/[24m[39m
+  [1mStack trace:[22m
+[2m    at getContentPaths (file:///C:/code/infrony.github.io/node_modules/astro/dist/content/utils.js:526:15)
+    at createSettings (file:///C:/code/infrony.github.io/node_modules/astro/dist/core/config/settings.js:146:20)
+    at async check (file:///C:/code/infrony.github.io/node_modules/astro/dist/cli/check/index.js:28:5)
+    at async cli (file:///C:/code/infrony.github.io/node_modules/astro/dist/cli/index.js:234:5)[22m
