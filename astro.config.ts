@@ -23,6 +23,9 @@ const hasExternalScripts = false;
 const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroIntegration)[] = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
+// In local dev, avoid Cloudflare worker runtime to prevent CJS module issues (debug -> "module is not defined").
+const isDevCommand = process.argv.includes('dev');
+
 export default defineConfig({
   output: 'static',
   site: 'https://infrony.com',
@@ -74,13 +77,6 @@ export default defineConfig({
     }),
   ],
 
-  image: {
-    service: {
-      entrypoint: '@astrojs/image/remote',
-      // Configura tus opciones aquí
-    },
-  },
-
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
     rehypePlugins: [responsiveTablesRehypePlugin, lazyImagesRehypePlugin],
@@ -93,10 +89,10 @@ export default defineConfig({
       },
     },
     ssr: {
-      noExternal: ['linkedom'], // Evita empaquetar 'linkedom' y otras dependencias problemáticas
+      noExternal: ['linkedom'],
     },
   },
 
-  adapter: cloudflare({ remoteBindings: false }),
+  adapter: isDevCommand ? undefined : cloudflare({ remoteBindings: false }),
 });
 

@@ -1,38 +1,32 @@
 site:
-  name: 'Servitech Infrony'
+  name: 'INFRONY SYSTEMS'
   site: 'https://infrony.com'
   base: '/'
   trailingSlash: false
-
-  # Añadir ID de verificación de Google para SEO
   googleSiteVerificationId: n1vhO1_mfclQhh86YaOYe50X7hPcClVpxtaisVVbmgk
-
   web3formsApiKey: '158949aa-8109-4dc2-8c5e-5884e214be84'
 
-# Default SEO metadata
 metadata:
   title:
-    default: 'Servitech Infrony'
-    template: '%s — Soluciones Tecnológicas'
-  description: '🚀 Soluciones Tecnológicas para Empresas, Desarrollo Web y Móvil, Integración de APIs, E-commerce, Diseño UX/UI y más. Tu aliado en la transformación digital.'
+    default: 'INFRONY SYSTEMS'
+    template: '%s | INFRONY SYSTEMS'
+  description: 'Ingenieria de IA, automatizacion de procesos, integracion de sistemas y desarrollo de software para empresas modernas.'
   keyword:
     [
-      'Soluciones Tecnológicas',
-      'Desarrollo Web',
-      'Transformación Digital',
-      'E-commerce',
-      'Diseño UX/UI',
-      'Automatización',
-      'Desarrollo web Panamá',
-      'Diseño web Panamá',
-      'software para atencion al cliente',
-      'software ecommerce',
+      'AI Automation',
+      'Business Automation',
+      'AI Agents',
+      'System Integration',
+      'Software Development',
+      'Infrony Orchestrator',
+      'Automatizacion con IA',
+      'Integracion de sistemas',
     ]
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: 'Servitech Infrony'
+    site_name: 'INFRONY SYSTEMS'
     images:
       - url: '~/assets/images/default.jpg'
         width: 1200
@@ -43,74 +37,45 @@ metadata:
     site: '@infrony'
     cardType: summary_large_image
 
-# Internationalization settings
 i18n:
   language: es
   textDirection: ltr
 
-# Blog settings
 apps:
   blog:
     isEnabled: true
     postsPerPage: 6
-
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/%slug%'
       robots:
         index: true
-
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
         index: true
-
     category:
       isEnabled: true
-      pathname: 'categoria' # Category main path /categoria/some-category, personalized for Spanish language
+      pathname: 'categoria'
       robots:
         index: true
-
     tag:
       isEnabled: true
-      pathname: 'etiqueta' # Tag main path /etiqueta/some-tag, personalized for Spanish language
+      pathname: 'etiqueta'
       robots:
         index: true
-
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
 
-# Analytics setup for tracking website performance
 analytics:
   vendors:
     googleAnalytics:
-      id: 'G-4DN11WM7XJ' # Replace with your Google Analytics ID
+      id: 'G-4DN11WM7XJ'
 
-# UI and theme customization
 ui:
-  theme: 'system' # Options: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system'
 
-# Additional settings to enhance visibility and brand alignment
-branding:
-  primaryColor: '#4CAF50' # Use colors from your brand
-  secondaryColor: '#8BC34A'
-  accentColor: '#FFC107'
-
-# SEO enhancements for better visibility
-seo:
-  keywords:
-    [
-      'Soluciones Tecnológicas',
-      'Desarrollo Web',
-      'Transformación Digital',
-      'E-commerce',
-      'Diseño UX/UI',
-      'Automatización',
-    ]
-  author: 'Servitech Infrony'
-
-# Social Media links (useful for driving traffic to your platforms)
 social:
   facebook: 'https://bit.ly/fb-servitech-infrony'
   instagram: 'https://bit.ly/ig-servitech-infrony'

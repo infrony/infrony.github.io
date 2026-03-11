@@ -29,36 +29,26 @@ const { language, textDirection } = I18N;
   <head>
     <CommonMeta />
     <Favicons />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <CustomStyles />
     <ApplyColorMode />
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
 
-    <!-- Insert Schema.org structured data -->
     <script is:inline type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Servitech Infrony",
+        "@type": "Organization",
+        "name": "INFRONY SYSTEMS",
         "url": "https://infrony.com",
-        "logo": "https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/logo-150dpi-vertical-only-logo%20(1).ico",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+507 65772083",
-          "contactType": "Customer Service",
-          "areaServed": "PA",
-          "availableLanguage": "Spanish"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Las Cumbres, Panamá",
-          "addressLocality": "Panamá",
-          "postalCode": "00000",
-          "addressCountry": "PA"
-        },
-        "description": "En Servitech Infrony, combinamos tecnología, creatividad y experiencia para transformar tus procesos digitales. Ofrecemos servicios de desarrollo de software, consultoría tecnológica, diseño web y mucho más, enfocados en potenciar tu presencia online y optimizar la experiencia de tus clientes.",
-        "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+        "logo": "https://pub-f30bb22e4bb247bea2af2e1ef8376e00.r2.dev/logos/logo%20horizontal%20new.png",
+        "description": "Empresa de ingenieria enfocada en automatizacion con IA, desarrollo de software e integracion de sistemas.",
         "sameAs": [
           "https://www.facebook.com/servitechinfrony",
           "https://www.instagram.com/servitech.infrony",
@@ -67,7 +57,6 @@ const { language, textDirection } = I18N;
       }
     </script>
 
-    <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         (w as unknown as { [key: string]: unknown })[l] = (w as unknown as { [key: string]: unknown })[l] || [];
@@ -82,11 +71,9 @@ const { language, textDirection } = I18N;
         }
       })(window, document, 'script', 'dataLayer', 'GTM-TZLKLV5Z');
     </script>
-    <!-- End Google Tag Manager -->
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
-    <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-TZLKLV5Z"
@@ -94,15 +81,14 @@ const { language, textDirection } = I18N;
         width="0"
         style="display:none;visibility:hidden"></iframe></noscript
     >
-    <!-- End Google Tag Manager (noscript) -->
+
     <slot />
 
-    <!-- Sticky WhatsApp Button -->
     <a
       href="https://wa.me/message/NQ2M2DC3AEDZD1"
       target="_blank"
       class="sticky-btn"
-      aria-label="Chateanos por WhatsApp!"
+      aria-label="Chateanos por WhatsApp"
     >
       <Icon name="tabler:brand-whatsapp" class="sticky-icon" />
     </a>

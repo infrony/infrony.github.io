@@ -26,7 +26,7 @@
   }
 
   .btn-primary {
-    @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+    @apply btn font-semibold bg-primary text-[#293542] border-primary hover:bg-secondary hover:border-secondary hover:text-[#293542] dark:text-[#293542] dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
   }
 
   .btn-secondary {
@@ -36,6 +36,54 @@
   .btn-tertiary {
     @apply btn border-none shadow-none text-muted hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
   }
+
+  .tech-section {
+    @apply relative overflow-hidden rounded-3xl border border-[#a6a6a6]/20 bg-white/80 p-8 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-[#111825];
+  }
+
+  .tech-card {
+    @apply rounded-2xl border border-[#a6a6a6]/25 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#b2d731]/20 dark:border-white/10 dark:bg-[#111825];
+  }
+
+  .hero-title {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-subtitle {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[#293542] dark:text-white;
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(to right, rgba(166, 166, 166, 0.12) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(166, 166, 166, 0.12) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+
+  .soft-glow {
+    box-shadow: 0 0 0 1px rgba(178, 215, 49, 0.2), 0 10px 60px rgba(178, 215, 49, 0.18);
+  }
+
+  .pipeline-arrow {
+    @apply text-[#8fcb29] text-xl font-bold;
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.7s ease both;
+  }
+
+  .floating-node {
+    animation: floatNode 6s ease-in-out infinite;
+  }
 }
 
 #header.scroll > div:first-child {
@@ -44,12 +92,9 @@
 }
 .dark #header.scroll > div:first-child,
 #header.scroll.dark > div:first-child {
-  @apply bg-page md:bg-[#030621e6] border-b border-gray-500/20;
+  @apply bg-page md:bg-[#0e1116e6] border-b border-gray-500/20;
   box-shadow: none;
 }
-/* #header.scroll > div:last-child {
-  @apply py-3;
-} */
 
 #header.expanded nav {
   position: fixed;
@@ -85,8 +130,39 @@
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
 
-/* To deprecated */
-
 .dd *:first-child {
   margin-top: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatNode {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
 }

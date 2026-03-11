@@ -1,57 +1,53 @@
 ---
-import '@fontsource-variable/inter';
 ---
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'Open Sans', sans-serif;
+    --aw-font-serif: 'Open Sans', sans-serif;
+    --aw-font-heading: 'Open Sans', sans-serif;
 
-    /* Colores basados en tu logo */
-    --aw-color-primary: #95a117; /* Reemplaza con el color azul oscuro del logo */
-    --aw-color-secondary: #789abc; /* Reemplaza con el color celeste del logo */
-    --aw-color-accent: #123456; /* Reemplaza con otro color de acento que desees usar del logo */
+    --aw-color-primary: #b2d731;
+    --aw-color-secondary: #8fcb29;
+    --aw-color-accent: #293542;
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
-
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    --aw-color-text-heading: #293542;
+    --aw-color-text-default: #293542;
+    --aw-color-text-muted: #a6a6a6;
+    --aw-color-bg-page: #fefffd;
+    --aw-color-bg-page-dark: #293542;
 
     ::selection {
-      background-color: #def012; /* Reemplaza con el color de selección del logo */
-      color: white;
+      background-color: #b2d731;
+      color: #293542;
     }
   }
 
   .dark {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'Open Sans', sans-serif;
+    --aw-font-serif: 'Open Sans', sans-serif;
+    --aw-font-heading: 'Open Sans', sans-serif;
 
-    --aw-color-primary: #95a117; /* Color principal oscuro */
-    --aw-color-secondary: #789abc;
-    --aw-color-accent: #123456;
+    --aw-color-primary: #b2d731;
+    --aw-color-secondary: #8fcb29;
+    --aw-color-accent: #293542;
 
-    --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-text-heading: #fefffd;
+    --aw-color-text-default: #fefffd;
+    --aw-color-text-muted: #a6a6a6;
+    --aw-color-bg-page: #0e1116;
 
     ::selection {
-      background-color: #def012;
-      color: snow;
+      background-color: #b2d731;
+      color: #293542;
     }
   }
 
-  /* Estilos para el botón sticky de WhatsApp */
   .sticky-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366; /* Verde de WhatsApp */
+    background-color: #25d366;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -64,13 +60,13 @@ import '@fontsource-variable/inter';
   }
 
   .sticky-btn:hover {
-    background-color: #128c7e; /* Verde oscuro de WhatsApp */
+    background-color: #128c7e;
   }
 
   .sticky-icon {
     width: 35px;
     height: 35px;
-    color: white;
+    color: #ffffff;
   }
 
   @media screen and (max-width: 768px) {
